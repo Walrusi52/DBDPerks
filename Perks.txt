@@ -1,6 +1,6 @@
 OnCommand e 0 !perk
-Function "return {afterlc: [after].toLowerCase()}"
-Function "return {hex: [arg1].toLowerCase()}"
+Function 'return {afterlc: [after].toLowerCase().replace(" ", "")}'
+Function 'return {hexlc: [after].toLowerCase().substr(0, 3)}'
 If 2 {afterlc} = "ace in the hole"
 	Chat Send "[Survivor | Ace] Lady Luck always seems to be throwing something good your way. When retrieving an Item from a Chest, there is a chance an Add-on will be attached to it. [• 100% chance for an Add-on of Very Rare Rarity or lower. • 10/25/50% chance for a second Add-on of Uncommon Rarity or lower.] Ace in the Hole allows you to keep any Add-ons your Item has equipped upon escaping. ''Everything that glitters isn't gold. But gold isn't worth a damn in this place, so this should come in handy.'' — Ace Visconti"
 	exit
@@ -13,7 +13,7 @@ If 2 {afterlc} = "aftercare"
 If 2 {afterlc} = "alert"
 	Chat Send "[Survivor | Feng] Your acute senses are on high alert. When the Killer breaks a Pallet or Breakable Wall, or damages a Generator, their Aura is revealed to you for 3/4/5 seconds. ''I have true sight.'' — Feng Min"
 	exit
-If 2 {afterlc} = "any means necessary" or {afterlc} = "any means"
+If 2 {afterlc} = "any means necessary" or {afterlc} = "anymeans"
 	Chat Send "[Survivor | Yui] You stand up for yourself, using whatever's on hand to gain an advantage. Press and hold the Active Ability button for 4 seconds while standing beside a dropped Pallet to reset it to its upright position. Any Means Necessary has a cool-down of 100/80/60 seconds. ''I'll hit you with everything I've got. Then I'll do it again.'' — Yui Kimura"
 	exit
 If 2 {afterlc} = "appraisal"
@@ -538,10 +538,10 @@ If 2 {afterlc} = "whispers"
 If 2 {afterlc} = "zanshin tactics" or {afterlc} = "zanshin"
 	Chat Send "[Killer | Oni] Unlocks potential in your Aura-reading ability. You are mentally alert and aware of key points on the battlefield. The Auras of Breakable Walls, Pallets, and Windows are revealed to you within 24/28/32 meters. ''Within your enemy's strength is weakness.'' — Renjiro's Doctrine 12:5"
 	exit
-If 2 {hex} = "hex:" or {hex} = "hex"
-	Chat Send "The search for hex was not found. Here is a list of the current hexes: • Blood Favour • Crowd Control • Devour Hope • Haunted Ground • Huntress Lullaby • No One Escapes Death • Retribution • Ruin • The Third Seal • Thrill of the Hunt • Undying"
-	exit
 If 2 {afterlc} = ""
 	Chat Send "To use this command type the perk name after the command !perk (capitalization does not matter). Example: !perk Autodidact"
+	exit
+If 2 {hexlc} = "hex"
+	Chat Send "The search for hex was not found. Here is a list of the current hexes: • Blood Favour • Crowd Control • Devour Hope • Haunted Ground • Huntress Lullaby • No One Escapes Death • Retribution • Ruin • The Third Seal • Thrill of the Hunt • Undying"
 	exit
 Chat Send "The searched perk was not found"
