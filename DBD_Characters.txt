@@ -1,0 +1,156 @@
+OnCommand e 0 !char !character 
+Function 'return {afterlc: [after].toLowerCase().replace(/[ ]/g, "")}'
+If 2 {afterlc} = "dwight"
+	Chat Send "Perks: Bond || Prove Thyself || Leader"
+	exit
+If 2 {afterlc} = "meg"
+	Chat Send "Perks: Quick & Quiet || Sprint Burst || Adrenaline"
+	exit
+If 2 {afterlc} = "claudette"
+	Chat Send "Perks: Empathy || Botany Knowledge || Self-Care"
+	exit
+If 2 {afterlc} = "jake"
+	Chat Send "Perks: Iron Will || Calm Spirit || Saboteur"
+	exit
+If 2 {afterlc} = "nea"
+	Chat Send "Perks: Balanced Landing || Urban Evasion || Streetwise"
+	exit
+If 2 {afterlc} = "laurie"
+	Chat Send "Perks: Sole Survivor || Object of Obsession || Decisive Strike"
+	exit
+If 2 {afterlc} = "ace"
+	Chat Send "Perks: Open-Handed || Up the Ante || Ace in the Hole"
+	exit
+If 2 {afterlc} = "bill"
+	Chat Send "Perks: Left Behind || Borrowed Time || Unbreakable"
+	exit
+If 2 {afterlc} = "feng"
+	Chat Send "Perks: Technician || Lithe || Alert"
+	exit
+If 2 {afterlc} = "quentin"
+	Chat Send "Perks: Wake Up! || Pharmacy || Vigil"
+	exit
+If 2 {afterlc} = "tapp"
+	Chat Send "Perks: Tenacity || Detective's Hunch || Stake Out"
+	exit
+If 2 {afterlc} = "kate"
+	Chat Send "Perks: Dance With Me || Windows of Opportunity || Boil Over"
+	exit
+If 2 {afterlc} = "adam"
+	Chat Send "Perks: Diversion || Deliverance || Autodidact"
+	exit
+If 2 {afterlc} = "david"
+	Chat Send "Perks: We're Gonna Live Forever || Dead Hard || No Mither"
+	exit
+If 2 {afterlc} = "jeff"
+	Chat Send "Perks: Breakdown || Aftercare || Distortion"
+	exit
+If 2 {afterlc} = "jane"
+	Chat Send "Perks: Solidarity || Poised || Head On"
+	exit
+If 2 {afterlc} = "ash"
+	Chat Send "Perks: Flip-Flop || Buckle Up || Mettle of Man"
+	exit
+If 2 {afterlc} = "nancy"
+	Chat Send "Perks: Better Together || Fixated || Inner Strength"
+	exit
+If 2 {afterlc} = "steve"
+	Chat Send "Perks: Babysitter || Camaraderie || Second Wind"
+	exit
+If 2 {afterlc} = "yui"
+	Chat Send "Perks: Lucky Break || Any Means Necessary || Breakout"
+	exit
+If 2 {afterlc} = "zarina"
+	Chat Send "Perks: Off the Record || Red Herring || For the People"
+	exit
+If 2 {afterlc} = "cheryl"
+	Chat Send "Perks: Soul Guard || Blood Pact || Repressed Alliance"
+	exit
+If 2 {afterlc} = "felix"
+	Chat Send "Perks: Visionary || Desperate Measures || Built to Last"
+	exit
+If 2 {afterlc} = "elodie"
+	Chat Send "Perks: Appraisal || Deception || Power Struggle"
+	exit
+If 2 {afterlc} = "yun-jin" or {afterlc} = "yunjin"
+	Chat Send "Perks: Fast Track || Smash Hit || Self-Preservation"
+	exit
+If 2 {afterlc} = "jill"
+	Chat Send "Perks: Counterforce || Resurgence || Blast Mine"
+	exit
+If 2 {afterlc} = "leon"
+	Chat Send "Perks: Bite the Bullet || Flashbang || Rookie Spirit"
+	exit
+If 2 {afterlc} = "trapper"
+	Chat Send "Perks: Unnerving Presence || Brutal Strength || Agitation"
+	exit
+If 2 {afterlc} = "wraith"
+	Chat Send "Perks: Predator || Bloodhound || Shadowborn"
+	exit
+If 2 {afterlc} = "hillbilly"
+	Chat Send "Perks: Enduring || Lightborn || Tinkerer"
+	exit
+If 2 {afterlc} = "nurse"
+	Chat Send "Perks: Stridor || Thanatophobia || A Nurse's Calling"
+	exit
+If 2 {afterlc} = "shape"
+	Chat Send "Perks: Save the Best for Last || Play with Your Food || Dying Light"
+	exit
+If 2 {afterlc} = "hag"
+	Chat Send "Perks: Hex: The Third Seal || Hex: Ruin || Hex: Devour Hope"
+	exit
+If 2 {afterlc} = "doctor"
+	Chat Send "Perks: Overwhelming Presence || Monitor & Abuse || Overcharge"
+	exit
+If 2 {afterlc} = "huntress"
+	Chat Send "Perks: Beast of Prey || Territorial Imperative || Hex: Huntress Lullaby"
+	exit
+If 2 {afterlc} = "cannibal"
+	Chat Send "Perks: Knock Out || Barbecue & Chilli || Franklin's Demise"
+	exit
+If 2 {afterlc} = "nightmare"
+	Chat Send "Perks: Fire Up || Remember Me || Blood Warden"
+	exit
+If 2 {afterlc} = "pig"
+	Chat Send "Perks: Hangman's Trick || Surveillance || Make Your Choice"
+	exit
+If 2 {afterlc} = "clown"
+	Chat Send "Perks: Bamboozle || Coulrophobia || Pop Goes the Weasel"
+	exit
+If 2 {afterlc} = "spirit"
+	Chat Send "Perks: Spirit Fury || Hex: Haunted Ground || Rancor"
+	exit
+If 2 {afterlc} = "legion"
+	Chat Send "Perks: Discordance || Mad Grit || Iron Maiden"
+	exit
+If 2 {afterlc} = "plague"
+	Chat Send "Perks: Corrupt Intervention || Infectious Fright || Dark Devotion"
+	exit
+If 2 {afterlc} = "ghostface"
+	Chat Send "Perks: I'm All Ears || Thrilling Tremors || Furtive Chase"
+	exit
+If 2 {afterlc} = "demogorgon"
+	Chat Send "Perks: Surge || Cruel Limits || Mindbreaker"
+	exit
+If 2 {afterlc} = "oni"
+	Chat Send "Perks: Zanshin Tactics || Blood Echo || Nemesis"
+	exit
+If 2 {afterlc} = "deathslinger"
+	Chat Send "Perks: Gearhead || Dead Man's Switch || Hex: Retribution"
+	exit
+If 2 {afterlc} = "executioner"
+	Chat Send "Perks: Forced Penance || Trail of Torment || Deathbound"
+	exit
+If 2 {afterlc} = "blight"
+	Chat Send "Perks: Dragon's Grip || Hex: Blood Favour || Hex: Undying"
+	exit
+If 2 {afterlc} = "twins"
+	Chat Send "Perks: Hoarder || Oppression || Coup de Grâce"
+	exit
+If 2 {afterlc} = "trickster"
+	Chat Send "Perks: Starstruck || Hex: Crowd Control || No Way Out"
+	exit
+If 2 {afterlc} = "nemesis"
+	Chat Send "Perks: Lethal Pursuer || Hysteria || Eruption"
+	exit
+Chat Send "The searched character was not found"

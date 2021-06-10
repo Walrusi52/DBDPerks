@@ -1,0 +1,547 @@
+OnCommand e 0 !perk
+Function 'return {afterlc: [after].toLowerCase().replace(/[ ]/g, "")}'
+Function 'return {hexlc: [after].toLowerCase().substr(0, 3)}'
+If 2 {afterlc} = "aceinthehole"
+	Chat Send "[Survivor | Ace] Lady Luck always seems to be throwing something good your way. When retrieving an Item from a Chest, there is a chance an Add-on will be attached to it. [• 100% chance for an Add-on of Very Rare Rarity or lower. • 10/25/50% chance for a second Add-on of Uncommon Rarity or lower.] Ace in the Hole allows you to keep any Add-ons your Item has equipped upon escaping. ''Everything that glitters isn't gold. But gold isn't worth a damn in this place, so this should come in handy.'' — Ace Visconti"
+	exit
+If 2 {afterlc} = "adrenaline"
+	Chat Send "[Survivor | Meg] You are fuelled by unexpected energy when on the verge of escape. When the Exit Gates are powered, instantly heal one Health State and sprint at 150% of your normal Running speed for 5 seconds. [• Adrenaline is on hold if you are disabled at the moment it triggers and will instead activate upon being freed. • If playing against The Nightmare, Adrenaline will wake you from the Dream World upon activation.] Adrenaline ignores an existing Exhaustion timer, but causes the Exhausted Status Effect for 60/50/40 seconds."
+	exit
+If 2 {afterlc} = "aftercare"
+	Chat Send "[Survivor | Jeff] Unlocks potential in your Aura-reading ability. You see the Aura of the last 1/2/3 Survivor(s): [• You have rescued from a Hook, or who have rescued you from a Hook. • You have completed a Healing action on, or who have completed a Healing action on you. • They also see your Aura.] All effects of Aftercare are reset upon being hooked by the Killer. '''A Mercy that Rips the Storm.' Oil work to honour my best buddies who happen to be the best musicians I know. Their first album is still my favourite. It got me through a dark time in my life.'' — Jeff, oil on canvas, 16x16"
+	exit
+If 2 {afterlc} = "alert"
+	Chat Send "[Survivor | Feng] Your acute senses are on high alert. When the Killer breaks a Pallet or Breakable Wall, or damages a Generator, their Aura is revealed to you for 3/4/5 seconds. ''I have true sight.'' — Feng Min"
+	exit
+If 2 {afterlc} = "anymeansnecessary" or {afterlc} = "anymeans"
+	Chat Send "[Survivor | Yui] You stand up for yourself, using whatever's on hand to gain an advantage. Press and hold the Active Ability button for 4 seconds while standing beside a dropped Pallet to reset it to its upright position. Any Means Necessary has a cool-down of 100/80/60 seconds. ''I'll hit you with everything I've got. Then I'll do it again.'' — Yui Kimura"
+	exit
+If 2 {afterlc} = "appraisal"
+	Chat Send "[Survivor | Élodie] You have a careful eye that notices what many overlook. Start the Trial with 3 Tokens: [• When a Chest has already been opened, consume 1 Token to rummage through it for an Item. • Rummage through Chests 40/60/80% faster.] Rummaging is only available once per Chest."
+	exit
+If 2 {afterlc} = "autodidact"
+	Chat Send "[Survivor | Adam] You start the Trial with a -25% Progression penalty for Skill Checks to heal Survivors. For every successful Skill Check completed while healing a Survivor, you receive a Token for a maximum of 3/4/5 Tokens. [• Each Token grants you a +15% bonus Progression for a successful Skill Check while healing Survivors. • Great Skill Checks cannot be performed while using Autodidact.] Autodidact is not active when using a Med-Kit to heal. ''There's no limit to what you can achieve, as long as you back it up with hard work.'' — Adam Francis"
+	exit
+If 2 {afterlc} = "babysitter"
+	Chat Send "[Survivor | Steve] While you have a reputation for being self-centred, you risk it all to help those in need. When you unhook a Survivor, the rescued Survivor will leave neither Scratch Marks nor Pools of Blood for the next 4/6/8 seconds. [• Both you and the Killer see each other's Aura for 4 seconds.] ''I promised to keep you shitheads safe, and that's exactly what I plan on doing.'' — Steve Harrington"
+	exit
+If 2 {afterlc} = "balancedlanding" or {afterlc} = "balanced"
+	Chat Send "[Survivor | Nea] Your agility and cat-like reflexes are incomparable. When falling from great heights: [• Your Stagger duration is reduced by 75% and your grunts are muffled by 100%. • Upon landing, you start sprinting at 150% of your normal running speed for a maximum of 3 seconds.] Balanced Landing causes the Exhausted Status Effect for 60/50/40 seconds. Balanced Landing cannot be used when Exhausted. ''I've jumped from higher places.'' — Nea Karlsson"
+	exit
+If 2 {afterlc} = "bettertogether"
+	Chat Send "[Survivor | Nancy] You seek justice and uncover the truth no matter what obstacle stands in your way. While repairing a Generator, its Aura is revealed in yellow to all other Survivors located within 32 meters. If the Killer downs a Survivor while you are repairing a Generator, you see the Auras of all other Survivors for 8/9/10 seconds. ''Let's burn that lab to the ground.'' — Nancy Wheeler"
+	exit
+If 2 {afterlc} = "bitethebullet"
+	Chat Send "[Survivor | Leon] Pain hurts you as much as anyone, but you would prefer others do not know that. When healing, you make no noise, including Grunts of Pain: [• Failed Healing Skill Checks do not trigger a Loud Noise notification and only apply a Regression penalty of 3/2/1%.] ''I can do this.'' — Leon Scott Kennedy"
+	exit
+If 2 {afterlc} = "blastmine"
+	Chat Send "[Survivor | Jill] When direct combat is not an option, you still find ways to strike back. [• After repairing Generators for a total of 66%, Blast Mine activates: • After repairing a Generator for at least 3 seconds, press the Ability button to install a Trap, which stays active for 35/40/45 seconds. • The Aura of Trapped Generators are revealed in yellow to all Survivors. • A Generator can only be affected by one instance of Blast Mine at a time. • When the Killer damages a Trapped Generator, the Trap explodes, stunning them and blinding anyone nearby.] Blast Mine deactivates after triggering successfully. ''You want S.T.A.R.S.? I'll give you S.T.A.R.S.!'' — Jill Valentine"
+	exit
+If 2 {afterlc} = "bloodpact"
+	Chat Send "[Survivor | Cheryl] It is as if a latent part of yourself has awakened. You feel like you can reach out beyond yourself for assistance. When you or the Obsession are injured, you both see each other's Auras. [• After healing the Obsession or being healed by the Obsession, you both gain the Haste Status Effect, moving at an increased speed of 5/6/7% until you are no longer within 16 meters of each other. • If you are the Obsession, Blood Pact deactivates.] Reduces the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time."
+	exit
+If 2 {afterlc} = "boilover"
+	Chat Send "[Survivor | Kate] You are a battler and do everything to escape a foe's grasp. While being carried by the Killer: [• Your Struggle Effects from Wiggling, causing the Killer to strafe sideways, are increased by 25/50/75%. • You obscure the Killer's ability to read the Auras of all Hooks within 10/12/14 meters of your pick-up location.] ''Buck and Wild, Swing to be free, Your hands just can't keep ahold of me.'' — Kate Denson's ''Boil Over''"
+	exit
+If 2 {afterlc} = "bond"
+	Chat Send "[Survivor | Dwight] Unlocks potential in your Aura-reading ability. The Auras of other Survivors are revealed to you when they are within a range of 20/28/36 meters. ''We have to work as a team, I need you to survive so that I can survive!'' — Dwight Fairfield"
+	exit
+If 2 {afterlc} = "borrowedtime" or {afterlc} = "borrowed" or {afterlc} = "bt"
+	Chat Send "[Survivor | Bill] You are fuelled with an unexpected energy when saving an Ally from a Hook. For 10/12/15 seconds after unhooking a Survivor, the unhooked Survivor is protected by the Endurance Status Effect. [• Any damage taken that would put the Survivor into the Dying State will instead trigger the Deep Wound Status Effect, after which the Survivor has 20 seconds to Mend themselves. • Taking any damage while under the effect of Deep Wound or if its timer runs out will put the Survivor into the Dying State.] ''Probably stings like hell, but it ain't gonna kill ya. Up and at 'em soldier. Time to move!'' — Bill Overbeck"
+	exit
+If 2 {afterlc} = "botanyknowledge" or {afterlc} = "botany"
+	Chat Send "[Survivor | Claudette] You transform plants found around The Campfire into tinctures that slow down bleeding. Healing speeds and the efficiency of Med-Kits are increased by 11/22/33%. ''Basic botany knowledge could save your life someday.'' — Claudette Morel"
+	exit
+If 2 {afterlc} = "breakdown"
+	Chat Send "[Survivor | Jeff] Each time you are unhooked or unhook yourself, the Hook breaks and the Killer's Aura is revealed to you for 4/5/6 seconds. [• A Hook broken by Breakdown takes 180 seconds to respawn.] '''Charge from the Belly of the Beast.' Here's a sketch/painting on a piece of wood I saw by the side of this road. I felt like it got a story to tell. And it didn't waste its second chance.'' — Jeff, ink and oil wash on slice of wood, 12x16"
+	exit
+If 2 {afterlc} = "breakout"
+	Chat Send "[Survivor | Yui] You kick into high gear when someone is in trouble, inspiring them to overcome any obstacle. When within 6 meters of a carried Survivor, you gain the Haste Status Effect, moving at an increased speed of 5/6/7%. [• The carried Survivor's Wiggling speed is increased by 20%.] ''Come, we're going to rip our way out of this.'' — Yui Kimura"
+	exit
+If 2 {afterlc} = "buckleup"
+	Chat Send "[Survivor | Ash] Unlocks potential in your Aura-reading ability. You can determine the Recovery progress of dying Survivors by the intensity of their Aura at a distance of up to 48 meters away. When healing another Survivor from the Dying State to the Injured State, the Killer's Aura is revealed to the both of you for 4/5/6 seconds. ''Ghost beaters never leave a man behind.'' — Ash Williams"
+	exit
+If 2 {afterlc} = "builttolast"
+	Chat Send "[Survivor | Felix] You know how to get the most out of your tools. Once per Trial, your carried Item will refill 30/40/50% of its Charges 10 seconds after having depleted it. ''Architecture is the soul of civilisation.'' — Felix Richter"
+	exit
+If 2 {afterlc} = "calmspirit"
+	Chat Send "[Survivor | Jake] Animals seem to trust you as they often stay calm in your presence. The chances of alerting nearby Crows are reduced by 80/90/100% and your urge to scream from pain is suppressed."
+	exit
+If 2 {afterlc} = "camaraderie"
+	Chat Send "[Survivor | Steve] Life has taught you the importance of friendship which has given you strength. While you are on the Hook in the Struggle Phase, Camaraderie activates. [• If another Survivor is within 16 meters of your Hook while Camaraderie is active, the Struggle Phase timer is paused for 26/30/34 seconds.] ''So, remember once you get in there... pretend like you don't care. There you go, you're learning my friend. You're learning.'' — Steve Harrington"
+	exit
+If 2 {afterlc} = "counterforce"
+	Chat Send "[Survivor | Jill] You know how to withstand an enemy stronger than you, and it starts with hunting down and knocking out their support. You cleanse Totems 20% faster. [• Gain another, stack-able 20% Cleansing Speed bonus per cleansed Totem. • After cleansing a Totem, the Aura of the Totem farthest from you is revealed to you for 2/3/4 seconds.] ''I don't mind a little detective work.'' — Jill Valentine"
+	exit
+If 2 {afterlc} = "dancewithme" or {afterlc} = "dance"
+	Chat Send "[Survivor | Kate] When performing a rushed action to vault a Window or leave a Locker, you will not leave any Scratch Marks for the next 3 seconds. Dance With Me has a cool-down of 60/50/40 seconds. ''Another show's off and runnin', Dance with me, cuz there's a storm a commin' Follow my boots, try to keep up, Dance with me, until sun up.'' — Kate Denson's ''Dance With Me''"
+	exit
+If 2 {afterlc} = "darksense"
+	Chat Send "[Survivor | All] Unlocks potential in your Aura-reading ability. Each time a Generator is completed, the Killer's Aura is revealed to you for 5 seconds and for 5/7/10 seconds when the last Generator is completed. ''Take it from an old-timer: Slow down, don't rush and try not to worry so much! The best way to beat him is to know how he thinks.'' — Murf, The Lost Tapes"
+	exit
+If 2 {afterlc} = "deadhard"
+	Chat Send "[Survivor | David] Activate-able Perk. You can take a beating. When Injured, tap into your adrenaline bank and dash forward quickly to avoid damage. [• Press the Active Ability button while running to dash forward. • Avoid any damage during the Dash.] Dead Hard causes the Exhausted Status Effect for 60/50/40 seconds. Dead Hard cannot be used when Exhausted. ''We were walkin' through t'ginnel one night when a beer bottle flew past me, then another, and another. I thought to myself ''Gonna 'ave some fun 'ere lads, let's get stuck in!''. It were a right dust up, I swear down!'' — David King"
+	exit
+If 2 {afterlc} = "deception"
+	Chat Send "[Survivor | Élodie] Your adventurous lifestyle requires moments of crafty misdirection. Interact with a Locker while holding the Sprint button to trigger a Loud Noise notification for the Killer at your location instead of entering the Locker. [• You will not leave any Scratch Marks for the next 3 seconds.] Deception can only be triggered once every 60/50/40 seconds."
+	exit
+If 2 {afterlc} = "decisivestrike" or {afterlc} = "ds"
+	Chat Send "[Survivor | Laurie] Using whatever is at hand, you stab at your aggressor in an ultimate attempt to escape. After being unhooked or unhooking yourself, Decisive Strike activates for the next 40/50/60 seconds: [• When being grabbed or picked up by the Killer, succeed a Skill Check to automatically escape their grasp, stunning them for 5 seconds. • Successfully stunning the Killer will disable Decisive Strike for the remainder of the Trial and result in you becoming the Obsession.] While Decisive Strike is active, the following interactions will deactivate it: [• Repairing a Generator. • Healing yourself or other Survivors. • Cleansing a Totem. • Sabotaging a Hook. • Unhooking other Survivors.] Increases the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time. ''There's nothing to be scared of.'' — Laurie Strode"
+	exit
+If 2 {afterlc} = "dejavu"
+	Chat Send "[Survivor | All] Unlocks potential in your Aura-reading ability. Paranoia paired with your horror of failure helps prepare you from repeating the same mistakes. [• The Auras of 3 Generators in closest proximity to one another are revealed to you for 30/45/60 seconds at the start of the Trial, and each time a Generator is completed. • If you are holding a Map, Generators revealed by Déjà Vu are automatically added to it.]"
+	exit
+If 2 {afterlc} = "deliverance"
+	Chat Send "[Survivor | Adam] After performing a Safe Hook Rescue on another Survivor, Deliverance activates: [• Your Self-Unhook attempts will succeed 100% of the time.] Deliverance causes the Broken Status Effect for 100/80/60 seconds after unhooking yourself. ''I was raised by a strict man who taught me how to make the best of a bad situation.'' — Adam Francis"
+	exit
+If 2 {afterlc} = "desperatemeasures"
+	Chat Send "[Survivor | Felix] You refuse to fail, even during your darkest hour. Increases Healing and Unhooking speeds by 10/12/14% for each injured, hooked, or dying Survivor, up to a maximum of 40/48/56%. ''When they come with a wrecking ball, build stronger walls.'' — Felix Richter"
+	exit
+If 2 {afterlc} = "detective'shunch" or {afterlc} = "detectiveshunch" or {afterlc} = "detective's" or {afterlc} = "detectives" or {afterlc} = "detective"
+	Chat Send "[Survivor | Tapp] Unlocks potential in your Aura-reading ability. Each time a Generator is completed, the Auras of any Generators, Chests, and Totems within 32/48/64 meters are revealed to you for 10 seconds. [• If you are holding a Map that can track the corresponding objects revealed by Detective's Hunch, they are automatically added to it.] ''Are you able to tell us where you were last night?'' — Detective David Tapp"
+	exit
+If 2 {afterlc} = "distortion"
+	Chat Send "[Survivor | Jeff] You start the Trial with 3 Tokens. Whenever the Killer attempts to read your Aura, Distortion activates and a Token is consumed: [• Your Aura will not be shown to the Killer and you will not leave any Scratch Marks for the next 6/8/10 seconds.] Distortion does not activate when you are in the Dying State or in a Killer Trap. '''Death Fooled by the Cloak of Falcon Feathers.' Sketch inspired by a few sleepless nights during winter. Exploration of Norse mythology: bravery can conceal your flaws, even when you are at your most vulnerable.'' — Jeff, pencil on tone paper, 12x12"
+	exit
+If 2 {afterlc} = "diversion"
+	Chat Send "[Survivor | Adam] Activate-able Perk. Standing within the Killer's Terror Radius while not in a Chase for 40/35/30 seconds activates Diversion. Once Diversion is activated, press the Active Ability button while crouched and motionless to throw a pebble, creating a distraction for the Killer at a distance of 20 meters. The distraction consists of the following: [• Loud Noise notification • Scratch Marks] Diversion's timer resets once the ability has been activated. ''There's what is easy and then there's what is right. If you confuse the two, there's no telling what you become.'' — Adam Francis"
+	exit
+If 2 {afterlc} = "empathy"
+	Chat Send "[Survivor | Claudette] Unlocks potential in your Aura-reading ability. The Auras of dying or injured Survivors are revealed to you within a range of 64/96/128 meters. Empathy does not reveal the Aura of a Survivor currently being carried by the Killer."
+	exit
+If 2 {afterlc} = "fasttrack"
+	Chat Send "[Survivor | Yun-Jin] Sometimes the sacrifice of others is necessary to get ahead. Whenever another Survivor is hooked, Fast Track gains 1/2/3 Token(s), up to a maximum of 9/18/27 Tokens. [• You consume all accumulated Tokens after a Great Skill Check on a Generator. • Each Token grants a stack-able 1% Progression bonus in addition to the default Progression bonus for succeeding a Great Skill Check.] ''The weak are sacrificed first. It's nature, it's business... it's the truth most refuse to face.'' — Yun-Jin Lee"
+	exit
+If 2 {afterlc} = "fixated"
+	Chat Send "[Survivor | Nancy] When you have a goal in mind, there is no turning back; better to ask forgiveness than permission. You walk 10/15/20% faster and can see your own Scratch Marks. ''I wanna finish what we started. I want to kill it.'' — Nancy Wheeler"
+	exit
+If 2 {afterlc} = "flashbang"
+	Chat Send "[Survivor | Leon] You have adapted to a world in chaos and making what you can from the debris. After repairing Generators for a total of 70/60/50%, Flashbang activates: [• Enter a Locker while empty-handed and press the Ability button to craft a Flash Grenade.] The Flash Grenade is left behind when escaping the Trial. ''Get outta my face!'' — Leon Scott Kennedy"
+	exit
+If 2 {afterlc} = "flip-flop" or {afterlc} = "flipflop"
+	Chat Send "[Survivor | Ash] You have an uncanny ability to escape the inevitable. While in the Dying State, 50% of your Recovery progression is converted into Wiggling progression, up to a maximum of 40/45/50%, once you are picked up by the Killer. ''Catch ya on the flip-flop.'' — Ash Williams"
+	exit
+If 2 {afterlc} = "forthepeople"
+	Chat Send "[Survivor | Zarina] You risk life and injury for others. For the People is only active while at full health. [• Press the Active Ability button while healing another Survivor without a Med-Kit to instantly heal them 1 Health State. • You become the Obsession.] For the People causes the Broken Status Effect for 110/100/90 seconds after using it. Reduces the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time. ''We can write our own story and decide how it really ends.'' — Zarina Kassir"
+	exit
+If 2 {afterlc} = "headon"
+	Chat Send "[Survivor | Jane] When your mind is set, there better be no one standing in your way. While standing in a Locker for 3 seconds, Head On activates. [• When performing a rushed action to leave a Locker, stun the Killer for 3 seconds if they are within range.] Head On causes the Exhausted Status Effect for 60/50/40 seconds. Head On cannot be used when Exhausted or when you have accrued Stillness Crows. ''People are remembered for the challenges they overcome. You can run away and forget what you're capable of or you can face your fears and remind the world of who you are.'' — Jane Romero"
+	exit
+If 2 {afterlc} = "hope"
+	Chat Send "[Survivor | All] The growing odds of a successful escape fill you with hope and give you wings. As soon as the Exit Gates are powered, you gain a 5/6/7% Haste Status Effect for 120 seconds. ''Buckle up, fuckos! Let's roll.'' — Nikki, The Lost Tapes"
+	exit
+If 2 {afterlc} = "innerstrength"
+	Chat Send "[Survivor | Nancy] You look inwards and trust your instincts when you feel lost and alone. Each time you cleanse a Totem, Inner Strength activates: [• You are automatically healed 1 Health State when hiding inside a Locker for 10/9/8 seconds while injured or suffering from the Deep Wound Status Effect.] Inner Strength does not activate if you currently suffer from the Broken Status Effect. ''All this time I've been trying so hard to pretend like everything's fine, but it's not.'' — Nancy Wheeler"
+	exit
+If 2 {afterlc} = "ironwill"
+	Chat Send "[Survivor | Jake] You are able to concentrate and enter a meditative-like state to numb some pain. When injured, Grunts of Pain are reduced by 50/75/100%."
+	exit
+If 2 {afterlc} = "kindred"
+	Chat Send "[Survivor | All] Unlocks potential in your Aura-reading ability. While you are hooked: [• The Auras of all Survivors are revealed to one another. • Whenever the Killer is within 8/12/16 meters of your Hook, their Aura is revealed to all Survivors.] While another Survivor is hooked: [• The Auras of all other Survivors are revealed to you. • Whenever the Killer is within 8/12/16 meters of the hooked Survivor, their Aura is revealed to you.] ''Be kind to one another. We're all in this together.'' — Sujan, The Lost Tapes"
+	exit
+If 2 {afterlc} = "leader"
+	Chat Send "[Survivor | Dwight] You are able to organise a team to cooperate more efficiently. When other Survivors are within 8 meters of you, Leader increases their Action speeds for Healing, Sabotaging, Unhooking, Cleansing, Opening, and Unlocking actions by 15/20/25%. [• This effect lingers for 15 seconds when leaving Leader's range.] Leader does not stack with other instances of itself."
+	exit
+If 2 {afterlc} = "leftbehind"
+	Chat Send "[Survivor | Bill] You will get the job done... no matter the cost. When you are the last Survivor remaining in the Trial, the Aura of the Hatch is revealed to you when you are within 24/28/32 meters. ''I'm not horse-shittin' around. I'm doing this alone!'' — Bill Overbeck"
+	exit
+If 2 {afterlc} = "lightweight"
+	Chat Send "[Survivor | All] Your running is light and soft, making your tracks harder to follow. Your Scratch Marks start to disappear 1/2/3 seconds sooner. ''Take it slow, he knows where you've been... just like I've always said: 'live slow and die old''' — Dylan, The Lost Tapes"
+	exit
+If 2 {afterlc} = "lithe"
+	Chat Send "[Survivor | Feng] After performing a rushed vault, break into a sprint at 150% of your normal running speed for a maximum of 3 seconds. Lithe causes the Exhausted Status Effect for 60/50/40 seconds. Lithe cannot be used when Exhausted. ''U mad?'' — Feng Min"
+	exit
+If 2 {afterlc} = "luckybreak"
+	Chat Send "[Survivor | Yui] You have had your share of scrapes and bruises, but luck is always on your side. Whenever you are in the Injured State, Lucky Break activates: [• Bleeding and Scratch Marks are suppressed for a maximum of 40/50/60 seconds, after which Lucky Break is disabled for the remainder of the Trial.] Lucky Break deactivates when you are Healthy or in the Dying State. ''That's not enough to beat me. Not even close.'' — Yui Kimura"
+	exit
+If 2 {afterlc} = "mettleofman"
+	Chat Send "[Survivor | Ash] Evil has a way of always finding you. After triggering your third Protection Hit, Mettle of Man activates and you are protected by the Endurance Status Effect: [• Any damage taken that would put you into the Dying State from the Injured State is blocked. • When you are healed again, your Aura will be revealed to the Killer whenever you are farther than 12/14/16 meters away.] Mettle of Man deactivates the next time you are put into the Dying State. Increases the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time. ''Evil has a bullseye on my back the size of Tiger Stadium.'' — Ash Williams"
+	exit
+If 2 {afterlc} = "nomither"
+	Chat Send "[Survivor | David] Go on out, kid, it is just a scratch. You suffer from the Broken Status Effect for the entire Trial. Your thick blood coagulates practically instantly: [• Bleeding is suppressed at all times. • When injured or dying, Grunts of Pain are reduced by 0/25/50%. • You can completely recover from the Dying State.] ''I lost it. Just lamped him one. They went and banned me didn't they. Went t'pub afterwards, had a few pints and moved on to the next chapter. I couldn't be mithered with it all anyway, you know what I mean? Can't be arsed.'' — David King"
+	exit
+If 2 {afterlc} = "nooneleftbehind"
+	Chat Send "[Survivor | All] It is inconceivable to leave someone behind. Once at least one Exit Gate has been opened, No One Left Behind activates: [• Gain a 30/40/50% Action Speed bonus to Unhooking and Healing other Survivors. • The Auras of all other Survivors are revealed to you.] No One Left Behind grants 50/75/100% bonus Bloodpoints for actions in the Altruism Category. ''... yeah, no shit. But I believe we can outsmart and overthrow him if we work together. Don't be predictable and selfish!'' — Clyde, The Lost Tapes"
+	exit
+If 2 {afterlc} = "objectofobsession" or {afterlc} = "object"
+	Chat Send "[Survivor | Laurie] A supernatural bond links you to the Killer. Whenever the Killer reads your Aura, Object of Obsession activates: [• The Killer's Aura is revealed to you for the same duration as they read your Aura. • Your Action speeds in Repairing, Healing, and Cleansing are increased by 2/4/6%. • If you are the Obsession, your Aura is revealed to the Killer for 3 seconds every 30 seconds.] Increases the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time. ''He was watching me!'' — Laurie Strode"
+	exit
+If 2 {afterlc} = "offtherecord"
+	Chat Send "[Survivor | Zarina] You have learnt that a quiet approach is sometimes best. After being unhooked or unhooking yourself, Off the Record activates for the next 60/70/80 seconds: [• Your Aura will not be shown to the Killer if they attempt to read it. • When injured, Grunts of Pain are reduced by 100%.] ''Trust me, I investigate thoroughly and discreetly.'' — Zarina Kassir"
+	exit
+If 2 {afterlc} = "open-handed" or {afterlc} = "openhanded"
+	Chat Send "[Survivor | Ace] Strengthens the potential in your and your team's Aura-reading abilities. Open-Handed increases all Aura-reading ranges by 8/12/16 meters. Open-Handed does not stack with other instances of itself. ''Paying attention is what kept me alive through the years. That, and my good looks of course.'' — Ace Visconti"
+	exit
+If 2 {afterlc} = "pharmacy"
+	Chat Send "[Survivor | Quentin] You have a knack for finding medicine. [• Unlocking Chests is 40/60/80% faster. • Unlocking your first Chest guarantees an Emergency Med-Kit.] Pharmacy reduces the audible range of your Chest-unlocking noises by 8 meters. ''Adrenaline, it's going to keep us awake. I stole it from one of the Nurse's carts.'' — Quentin Smith"
+	exit
+If 2 {afterlc} = "plunderer'sinstinct" or {afterlc} = "plunderersinstinct" or {afterlc} = "plunderer's" or {afterlc} = "plunderers" or {afterlc} = "plunderer"
+	Chat Send "[Survivor | All] Unlocks potential in your Aura-reading ability. The Auras of closed Chests and dropped Items throughout the Trial Grounds are revealed to you within 16/24/32 meters. [• Grants a considerably better chance at finding an Item of a higher Rarity from Chests.] ''The pioneers used to loot these babies for hours.'' — Aizeyu, The Lost Tapes"
+	exit
+If 2 {afterlc} = "poised"
+	Chat Send "[Survivor | Jane] Achieving goals boosts your confidence. After a Generator is completed, you will not leave any Scratch Marks for the next 6/8/10 seconds. ''Ok, stay calm. Don't overthink it and just keep moving forward: you got this.'' — Jane Romero"
+	exit
+If 2 {afterlc} = "powerstruggle"
+	Chat Send "[Survivor | Élodie] You have never given up and you are not about to start now. While being carried by The Killer, reaching 35/30/25% Wiggling progression activates Power Struggle: [• You can drop a nearby, standing Pallet to stun The Killer and escape their grasp.] Power Struggle deactivates after triggering successfully. ''I relied on others to protect me once and I lost everything. Never again.'' — Élodie Rakoto"
+	exit
+If 2 {afterlc} = "premonition"
+	Chat Send "[Survivor | All] You have the undeniable capability to sense danger. Get an auditory warning when looking in the Killer's direction within a 45° cone within 36 meters. Premonition has a cool-down of 60/45/30 seconds each time it activates. ''I have a bad feeling about this!''"
+	exit
+If 2 {afterlc} = "provethyself"
+	Chat Send "[Survivor | Dwight] Gain a stack-able 15% Repair Speed bonus for each Survivor within 4 meters of you, up to a maximum of 45%. [• This effect is also applied to all other Survivors within that range.] Prove Thyself grants 50/75/100% bonus Bloodpoints for Co-operative actions. Prove Thyself does not stack with other instances of itself. ''Show me what you can do!'' — Dwight Fairfield"
+	exit
+If 2 {afterlc} = "quick&quiet" or {afterlc} = "quickandquiet"
+	Chat Send "[Survivor | Meg] You do not make as much noise as others when quickly vaulting over obstacles or hiding in Lockers. Loud Noise notifications for rushing to vault Windows, or to enter or exit Lockers are completely suppressed. Quick & Quiet has a cool-down of 30/25/20 seconds."
+	exit
+If 2 {afterlc} = "redherring"
+	Chat Send "[Survivor | Zarina] You have noticed that people pay attention to whatever makes the loudest noise. After repairing a Generator for at least 3 seconds, its Aura is highlighted to you in yellow. [• The Generator stays highlighted until it is either fully repaired, you start repairing another Generator, or enter a Locker. • Entering a Locker will trigger a Loud Noise notification for the Killer at the highlighted Generator's location.] Red Herring has a cool-down of 60/50/40 seconds. ''The news edit out what is burdensome and complex, which is the truth.'' — Zarina Kassir"
+	exit
+If 2 {afterlc} = "repressedalliance" or {afterlc} = "repressed"
+	Chat Send "[Survivor | Cheryl] You are accustomed to being hunted by malicious forces, and you have begun using it to your advantage. After repairing Generators for a total of 80/70/60 seconds, Repressed Alliance activates: [• Press the Active Ability button to call upon The Entity to block the Generator you are currently repairing for 30 seconds, after which Repressed Alliance deactivates. • The Aura of the blocked Generator is revealed to all Survivors in white.]"
+	exit
+If 2 {afterlc} = "resilience"
+	Chat Send "[Survivor | All] You are motivated in dire situations. When injured, your Action speeds in Repairing, Healing, Sabotaging, Unhooking, Vaulting, Cleansing, Opening, and Unlocking are increased by 3/6/9%. ''Focus, even in these desperate times.''"
+	exit
+If 2 {afterlc} = "resurgence"
+	Chat Send "[Survivor | Jill] You have come back from near impossible odds... and you will do it again. After being unhooked or unhooking yourself, instantly gain 40/45/50% to your Healing progress. ''It's my turn, bitch!'' — Jill Valentine"
+	exit
+If 2 {afterlc} = "rookiespirit"
+	Chat Send "[Survivor | Leon] You keep a careful eye on objectives when they are slipping away. While repairing Generators, complete 5/4/3 Good or Great Skill Checks to activate Rookie Spirit for the remainder of the Trial: [• Once active, the Auras of any regressing Generators are revealed to you.] ''I'll stop this, lieutenant. I promise.'' — Leon Scott Kennedy"
+	exit
+If 2 {afterlc} = "saboteur"
+	Chat Send "[Survivor | Jake] Unlocks potential in your Aura-reading ability. [• While a Survivor is being carried, the Auras of all Hooks within 56 meters the location they were picked up at are revealed to you.] Unlocks the ability to sabotage Hooks without needing a Toolbox : [• Sabotaging a Hook without a Toolbox takes 3 seconds. • The Sabotage action has a cool-down of 90/75/60 seconds.]"
+	exit
+If 2 {afterlc} = "secondwind"
+	Chat Send "[Survivor | Steve] You have learnt to avoid awkward situations with parents. Part of you still thinks your best option is to run away and hope things will take care of themselves. When you heal another Survivor for the equivalent of 1 Health State, Second Wind activates: [• The next time you are unhooked or unhook yourself, you suffer from the Broken Status Effect until Second Wind deactivates. • You are automatically healed 1 Health State after 28/24/20 seconds.] While Second Wind is active, the following conditions will deactivate it: [• Successfully being healed by Second Wind. • Being put into the Dying State before the timer elapses.] Second Wind does not activate if you already suffer from the Broken Status Effect. ''Yeah, that's a no.'' — Steve Harrington"
+	exit
+If 2 {afterlc} = "self-care" or {afterlc} = "selfcare"
+	Chat Send "[Survivor | Claudette] Unlocks the ability to heal yourself without needing a Med-Kit at 50% of the normal Healing speed. [• When using a Med-Kit, its Depletion rate is decreased by 10/15/20%.]"
+	exit
+If 2 {afterlc} = "self-preservation" or {afterlc} = "selfpreservation"
+	Chat Send "[Survivor | Yun-Jin] Life is unforgiving. The more confirmation you get of that, the more prepared you become. Whenever another Survivor is hit with a Basic or Special Attack within 16 meters of you, Self-Preservation activates: [• Scratch Marks, Grunts of Pain when injured, and Bleeding are suppressed for the next 6/8/10 seconds.] ''Something I learnt in the industry: when the axe is swinging, keep your head down.'' — Yun-Jin Lee"
+	exit
+If 2 {afterlc} = "slipperymeat"
+	Chat Send "[Survivor | All] You have developed an efficient way to get off Hooks. [• Grants 3 additional Self-Unhook attempts. • Your Self-Unhook chance is increased by 2/3/4%.]"
+	exit
+If 2 {afterlc} = "smallgame"
+	Chat Send "[Survivor | All] You have the undeniable capability to sense danger. Get an auditory warning when looking in the direction of Totems in a 45° cone within 8/10/12 meters. Small Game has a cool-down of 15/12/10 seconds each time it activates. For each Dull or Hex Totem cleansed by any Player, Small Game gains 1 Token: [• Each Token decreases the Detection cone's angle by 5°, down to a minimum of 20°.] ''Nope.'' — Andy, The Lost Tapes"
+	exit
+If 2 {afterlc} = "smashhit"
+	Chat Send "[Survivor | Yun-Jin] When your rival makes a mistake, you seize the opportunity. After stunning the Killer with a Pallet, break into a sprint at 150% of your normal running speed for a maximum of 4 seconds. Smash Hit causes the Exhausted Status Effect for 60/50/40 seconds. Smash Hit cannot be used when Exhausted. ''I've dealt with psychopaths in suits. You're just uglier and worse dressed.'' — Yun-Jin Lee"
+	exit
+If 2 {afterlc} = "solesurvivor"
+	Chat Send "[Survivor | Laurie] As more of your friends fall to the Killer, you become shrouded in isolation and the Killer's Aura-reading abilities towards you are disrupted. Each time a Survivor other than yourself is killed or sacrificed, Sole Survivor gains 1 Token, up to a maximum of 3 Tokens: [• Each Token grants a stack-able radius of 20/22/24 meters within which the Killer is unable to read your Aura, up to a maximum of 60/66/72 meters.] Increases the odds of being the Obsession. The Killer can only be obsessed with one Survivor at a time. ''It was the boogeyman.'' — Laurie Strode"
+	exit
+If 2 {afterlc} = "solidarity"
+	Chat Send "[Survivor | Jane] Sharing painful experiences has the power to heal. When injured, healing another Survivor without using a Med-Kit also heals you with a Conversion rate of 40/45/50%. ''Showing up when things get rough, listening to people's problems, and supporting those in need; that's how you become stronger, that's how you grow.'' — Jane Romero"
+	exit
+If 2 {afterlc} = "soulguard"
+	Chat Send "[Survivor | Cheryl] You have been through immense hardship and you're stronger for it. After being healed from or having recovered from the Dying State, Soul Guard grants you the Endurance Status Effect for the next 4/6/8 seconds. [• Any damage taken that would put you into the Dying State will instead trigger the Deep Wound Status Effect, after which you have 20 seconds to Mend yourself. • Taking any damage while under the effect of Deep Wound or if its timer runs out will put you into the Dying State.] Soul Guard allows you to completely recover from the Dying State when you are affected by the Cursed Status Effect. Soul Guard has a cool-down of 30 seconds."
+	exit
+If 2 {afterlc} = "spinechill"
+	Chat Send "[Survivor | All] An unnatural tingle warns you of impending doom. Whenever the Killer is looking in your direction when within 36 meters of you, Spine Chill activates: [• Skill Check Trigger odds are increased by 10%. • Skill Check Success zones are reduced by 10%. • Your Action speeds in Repairing, Healing, Sabotaging, Unhooking, Vaulting, Cleansing, Opening, and Unlocking are increased by 2/4/6%.] ''There is a voice that doesn't use words. Listen..'' — Sassy, The Lost Tapes"
+	exit
+If 2 {afterlc} = "sprintburst"
+	Chat Send "[Survivor | Meg] When starting to run, break into a sprint at 150% of your normal running speed for a maximum of 3 seconds. Sprint Burst causes the Exhausted Status Effect for 60/50/40 seconds. Sprint Burst cannot be used when Exhausted."
+	exit
+If 2 {afterlc} = "stakeout"
+	Chat Send "[Survivor | Tapp] Getting close to the Killer fills you with determination. Every 15 seconds you are standing within the Killer's Terror Radius without being chased, Stake Out gains 1 Token, up to a maximum of 2/3/4 Tokens. [• When Stake Out has at least 1 Token, Good Skill Checks consume 1 Token and are considered Great Skill Checks, granting an additional Progression bonus of 1%. • Great Skill Checks do not consume any Tokens.] ''I had you, I had you on your knees. You're runnin' scared because we had you. We're gonna close this case!'' — Detective David Tapp"
+	exit
+If 2 {afterlc} = "streetwise"
+	Chat Send "[Survivor | Nea] Long nights out taught you to do a lot with what you have got. The Depletion rate of your Items is reduced by 15/20/25%. [• This effect also applies to all other Survivors within 8 meters of you and lingers for 15 seconds.] ''You're doing it wrong! Let me show you how it's done.'' — Nea Karlsson"
+	exit
+If 2 {afterlc} = "technician"
+	Chat Send "[Survivor | Feng] You are apt at handling machinery with the greatest care and precision. Failing a Skill Check while repairing: [• Prevents the Generator Explosion. • Applies the default Regression penalty. • Applies an additional Regression penalty of 5/4/3%.] Technician reduces the audible range of your Generator-repairing noises by 8 meters. ''I'm gonna stealth this one.'' — Feng Min"
+	exit
+If 2 {afterlc} = "tenacity"
+	Chat Send "[Survivor | Tapp] There is nothing stopping you. Your ferocious tenacity in dire situations allows you to crawl 30/40/50% faster and also recover at the same time. ''What the hell is this? I'm taking this bastard down!'' — Detective David Tapp"
+	exit
+If 2 {afterlc} = "thisisnothappening"
+	Chat Send "[Survivor | All] You perform at your best when you are under extreme stress. When injured, the Success zone of Great Skill Checks while Repairing, Healing, and Sabotaging is increased by 10/20/30%."
+	exit
+If 2 {afterlc} = "uptheante"
+	Chat Send "[Survivor | Ace] All will be well in the end; you just know it. Your confidence strengthens the feeling of hope for those around you. For each Survivor still in the Trial, Up the Ante gains 1 Token. [• Each Token applies a stack-able 1/2/3% bonus to the Luck of all Survivors, up to a maximum of 3/6/9%.] ''What can I say? I'm just a very lucky guy... I'm sure some of it will rub off on you.'' — Ace Visconti"
+	exit
+If 2 {afterlc} = "unbreakable"
+	Chat Send "[Survivor | Bill] Past battles have taught you a thing or two about survival. Once per Trial, you can completely recover from the Dying State. [• Your Recovery speed is permanently increased by 25/30/35%.] ''Goddammit, I am seriously FUBAR!'' — Bill Overbeck"
+	exit
+If 2 {afterlc} = "urbanevasion"
+	Chat Send "[Survivor | Nea] Years of evading the cops taught you a thing or two about stealth. When crouching, your Movement speed is increased by 90/95/100%. ''The paint is still fresh but I'm long gone.'' — Nea Karlsson"
+	exit
+If 2 {afterlc} = "vigil"
+	Chat Send "[Survivor | Quentin] You look over your friends even in dire situations. You recover 10/15/20% faster from the Blindness, Exhaustion, Haemorrhage, and Hindered Status Effects. [• This effect also applies to all other Survivors within 8 meters of you and lingers for 15 seconds.] ''I'm gonna be here when you wake up. You're gonna make it.'' — Quentin Smith"
+	exit
+If 2 {afterlc} = "visionary"
+	Chat Send "[Survivor | Felix] You are remarkably focused on your means of escape. The Auras of Generators are revealed to you within 32 meters. [• Each time a Generator is completed, Visionary is disabled for 20/18/16 seconds.]"
+	exit
+If 2 {afterlc} = "wakeup!" or {afterlc} = "wakeup"
+	Chat Send "[Survivor | Quentin] Unlocks potential in your Aura-reading ability. Once all Generators are completed, Wake Up! activates: [• The Auras of the Exit Gate Switches are revealed to you within 128 meters. • When opening an Exit Gate, your Aura is revealed to all other Survivors within 128 meters. • You open Exit Gates 5/10/15% faster.] ''Ok, look. If we survive the next 24 hours, then I'll take you out on a real date.'' — Quentin Smith"
+	exit
+If 2 {afterlc} = "we'llmakeit" or {afterlc} = "wellmakeit"
+	Chat Send "[Survivor | All] Helping others heightens your morale. Whenever you rescue a Survivor from a Hook, your Altruistic Healing speed is increased by 100% for the next 30/60/90 seconds. ''I'm confident we can all escape in one piece if we help each other.''"
+	exit
+If 2 {afterlc} = "we'regonnaliveforever"  or {afterlc} = "weregonnaliveforever"
+	Chat Send "[Survivor | David] Your few friends deserve the best protection. When healing a dying Survivor, your Healing speed is increased by 100%. Performing any of the following actions has We're Gonna Live Forever gain 1 Token: [• Performing a Safe Hook Rescue. • Taking a Protection Hit for an injured Survivor. • Stunning the Killer to rescue a carried Survivor. • Blinding the Killer to rescue a carried Survivor.] Each Token grants a stack-able 25% bonus to all Bloodpoint gains, up to a maximum of 50/75/100%. The bonus Bloodpoints are only awarded post-Trial. ''Come on then, let's 'ave it! I don't give a shit pal.'' — David King"
+	exit
+If 2 {afterlc} = "windowsofopportunity" or {afterlc} = "windows"
+	Chat Send "[Survivor | Kate] Unlocks potential in your Aura-reading ability. The Auras of Breakable Walls, Pallets, and Windows are revealed to you within 20 meters. Windows of Opportunity has a cool-down of 30/25/20 seconds after vaulting or dropping a Pallet during a Chase. ''Rise and shine, work hard, carve out your name, Take aim, pull the trigger, hit the bulls eye for fame, Know the value of faith, an' family, and don't you complain, Open wide, your windows of opportunity'' — Kate Denson's ''Windows of Opportunity''"
+	exit
+If 2 {afterlc} = "anurse'scalling" or {afterlc} = "anursescalling" or {afterlc} = "nurse'scalling" or {afterlc} = "nursescalling" or {afterlc} = "nurse's" or {afterlc} = "nurses"
+	Chat Send "[Killer | Nurse] Unlocks potential in your Aura-reading ability. The Auras of Survivors, who are healing or being healed, are revealed to you when they are within a range of 20/24/28 meters. ''Still attached to the fragments of her past life, she is drawn to those in need of help.''"
+	exit
+If 2 {afterlc} = "agitation"
+	Chat Send "[Killer | Trapper] You get excited in anticipation of hooking your prey. While carrying a Survivor, your Movement speed is increased by 6/12/18% and your Terror Radius is increased by 12 meters. ''At some point, the excitement of hooking one of us becomes more important than the desire to kill us.''"
+	exit
+If 2 {afterlc} = "bamboozle"
+	Chat Send "[Killer | Clown] Performing a Vault action is 5/10/15% faster and calls upon The Entity to block that Vault location for Survivors for 8/12/16 seconds. Only one Vault location may be blocked this way at any given time. Bamboozle does not affect Pallets."
+	exit
+If 2 {afterlc} = "barbecue&chilli" or {afterlc} = "barbecueandchilli" or {afterlc} = "bbq&chilli" or {afterlc} = "bbqandchilli" or {afterlc} = "barbecue"  or {afterlc} = "bbq"
+	Chat Send "[Killer | Cannibal] A deep bond with The Entity unlocks potential in one's Aura-reading ability. After hooking a Survivor, all other Survivors' Auras are revealed to you for 4 seconds when they are farther than 40 meters from the Hook. [• Each time a Survivor is hooked for the first time, gain a stack-able 25% bonus to all Bloodpoint gains, up to a maximum of 50/75/100%.] The bonus Bloodpoints are only awarded post-Trial. ''I just can't take no pleasure in killing. There's just some things you gotta do. Don't mean you have to like it.'' — Drayton Sawyer"
+	exit
+If 2 {afterlc} = "beastofprey"
+	Chat Send "[Killer | Huntress] Your lust for a kill is so intense that your connection with The Entity is momentarily lost, making you totally unpredictable. Upon gaining Bloodlust Tier I, you are granted the Undetectable Status Effect for as long as Bloodlust is active Beast of Prey grants 30/40/50% bonus Bloodpoints for actions in the Hunter Category. The bonus Bloodpoints are only awarded during the Trial. ''Where did she go?''"
+	exit
+If 2 {afterlc} = "bittermurmur"
+	Chat Send "[Killer | All] Unlocks potential in your Aura-reading ability. Each time a Generator is completed, the Auras of Survivors who are within 16 meters of the completed Generator will be revealed to you for 5 seconds. [• When the last Generator is completed, the Auras of all Survivors are shown for 5/7/10 seconds.]"
+	exit
+If 2 {afterlc} = "bloodecho"
+	Chat Send "[Killer | Oni] The agony of one is inflicted onto others. When hooking a Survivor, all other injured Survivors suffer from the Haemorrhage Status Effect until healed and the Exhausted Status Effect for 45 seconds. Blood Echo can only be triggered once every 80/70/60 seconds. ''Attack an enemy with precision and their allies will feel it.'' — Renjiro's Doctrine 6:3"
+	exit
+If 2 {afterlc} = "bloodwarden"
+	Chat Send "[Killer | Nightmare] As soon as at least one Exit Gate is opened, Blood Warden activates. [• The Auras of Survivors standing within the Exit-Gate area are revealed to you.] Once per Trial, hooking a Survivor while Blood Warden is active calls upon The Entity to block the exits for all Survivors for 30/40/60 seconds. ''This is my world. And you can't ever leave.'' — Freddy Krueger"
+	exit
+If 2 {afterlc} = "bloodhound"
+	Chat Send "[Killer | Wraith] Like a hunting scent hound, you smell traces of blood at a great distance. Pools of Blood are shown in bright red and can be tracked for 2/3/4 seconds longer than normal. ''Pebbles shimmering in the moonlight; my life drips down in a trail so easy to follow.''"
+	exit
+If 2 {afterlc} = "brutalstrength"
+	Chat Send "[Killer | Trapper] Your great strength allows you to shred through your prey's defences. Breaking Pallets and Breakable Walls, as well as damaging Generators, is 10/15/20% faster. ''It's more than muscles. A dark power motivates the beast.''"
+	exit
+If 2 {afterlc} = "corruptintervention" or {afterlc} = "corrupt"
+	Chat Send "[Killer | Plague] Your prayers invoke a dark power that meddles with the Survivors' chances of survival. At the start of the Trial, the 3 Generators located farthest from you are blocked by The Entity for 80/100/120 seconds. ''It shall be known across the land that the Gods curse the unfaithful.'' (The Tablet of Adiris, 3.7)"
+	exit
+If 2 {afterlc} = "coulrophobia"
+	Chat Send "[Killer | Clown] Your presence alone instils great fear. The Healing speed of Survivors within your Terror Radius is reduced by 30/40/50%."
+	exit
+If 2 {afterlc} = "coupdegrace"
+	Chat Send "[Killer | Twins] As the end nears, you go in for the kill. Each time a Generator is completed, Coup de Grâce grows in power and you gain 1 Token. [• Consume 1 Token to increase the distance of your next Lunge Attack by 40/50/60%.]"
+	exit
+If 2 {afterlc} = "cruellimits"
+	Chat Send "[Killer | Demogorgon] Your ties to the otherworldly manifest when your prey attempts to get away. Each time a Generator is repaired, all Windows and Vault locations within 32 meters of it become blocked for all Survivors for the next 20/25/30 seconds. ''The specimen seems to be able to affect the state of nearby objects, as if they existed in some other form within a dimension alternate to our own.'' — Hawkins National Laboratory"
+	exit
+If 2 {afterlc} = "darkdevotion"
+	Chat Send "[Killer | Plague] The display of your Powers creates a whirlwind of panic that spreads throughout the land. You become obsessed with one Survivor. Hitting the Obsession with a Basic Attack causes them to emit a Terror Radius of 32 meters for the next 20/25/30 seconds. [• You are granted the Undetectable Status Effect. • The Obsession hears their own Terror Radius.] You can only be obsessed with one Survivor at a time. ''And terror shall take hold of a defiant non-believer, who shall falsely announce my arrival.'' (The Tablet of Adiris, 48.9)"
+	exit
+If 2 {afterlc} = "deadman'sswitch" or {afterlc} = "deadmansswitch"
+	Chat Send "[Killer | Deathslinger] You become obsessed with one Survivor. After hooking the Obsession, Dead Man's Switch activates for the next 35/40/45 seconds. [• While activated, any Survivor that stops repairing a Generator before it is fully repaired causes • • The Entity to block the Generator until Dead Man's Switch's effect ends.] Affected Generators are highlighted by a white Aura. You can only be obsessed with one Survivor at a time. ''I've seen the look on a man's face when he realises he's going to die.'' — Caleb Quinn"
+	exit
+If 2 {afterlc} = "deathbound"
+	Chat Send "[Killer | Executioner] Those whose lives are intertwined in darkness are destined to suffer together. When a Survivor heals another Survivor for the equivalent of 1 Health State at least 32 meters away from you, that Survivor will scream, revealing their location and activating Deathbound: [• For the next 60 seconds, that Survivor suffers from the Oblivious Status Effect when farther than 16/12/8 meters away from the healed Survivor.]"
+	exit
+If 2 {afterlc} = "deerstalker"
+	Chat Send "[Killer | All] Unlocks potential in your Aura-reading ability. The Auras of Survivors who are in the Dying State are revealed to you when they are within a range of 20/28/36 meters."
+	exit
+If 2 {afterlc} = "discordance"
+	Chat Send "[Killer | Legion] Any Generator within a range of 64/96/128 meters that is being repaired by 2 or more Survivors is marked by a yellow Aura. [• When the Generator is first highlighted, Discordance triggers a Loud Noise notification on the Generator. • After the Generator is no longer within range or is being repaired by just 1 Survivor, the highlighted Aura will linger for another 4 seconds.] ''Smartasses get killed. We always see to that.'' — The Legion"
+	exit
+If 2 {afterlc} = "distressing"
+	Chat Send "[Killer | All] Your horrifying emanation strikes at a supernaturally long distance. Your Terror Radius is increased by 22/24/26%. Distressing grants 100% bonus Bloodpoints for actions in the Deviousness Category. The bonus Bloodpoints are only awarded during the Trial. ''Bask in their fear.''"
+	exit
+If 2 {afterlc} = "dragon'sgrip" or {afterlc} = "dragonsgrip"
+	Chat Send "[Killer | Blight] After kicking a Generator, for the next 30 seconds, the first Survivor interacting with it will scream, revealing their location for 4 seconds, and suffers from the Exposed Status Effect for 60 seconds. Dragon's Grip has a cool-down of 120/100/80 seconds. ''Such potential in this compound... even the slightest trace causes unnatural effects.'' — Journal of Talbot Grimes"
+	exit
+If 2 {afterlc} = "dyinglight"
+	Chat Send "[Killer | Shape] You become obsessed with one Survivor. Each time you hook a Survivor other than your Obsession, you gain 1 Token: [• For as long as the Obsession is alive, all other Survivors suffer from a stack-able 2/2.5/3% penalty to Repairing, Healing, and Sabotaging speeds per Token, up to a maximum of 22/27.5/33% or 11 Tokens. • The Obsession is unaffected by this penalty and instead granted a permanent 33% Action Speed bonus to Unhooking and Healing other Survivors.] You can only be obsessed with one Survivor at a time. ''This isn't a man...'' — Dr Sam Loomis"
+	exit
+If 2 {afterlc} = "enduring"
+	Chat Send "[Killer | Hillbilly] You are resilient to pain. The duration of Pallet Stuns is reduced by 40/45/50%. ''He stops at nothing.''"
+	exit
+If 2 {afterlc} = "eruption"
+	Chat Send "[Killer | Nemesis] The NE-α parasite provides you with the intelligence and awareness needed to set a trap. After kicking a Generator, its Aura is highlighted in yellow. [• When you put a Survivor into the Dying State with a Basic Attack, every affected Generator explodes, regressing their progress by 6% and causing their Auras to disappear. • Any Survivor repairing a Generator when it explodes will scream and suffer from the Incapacitated Status Effect for 10/12/14 seconds.] Eruption has a cool-down of 90 seconds. ''It can use weapons?'' — Jill Valentine"
+	exit
+If 2 {afterlc} = "fireup"
+	Chat Send "[Killer | Nightmare] The increased pressure of losing your preys fills you with anger and gives you unsuspected motivation. Each time a Generator is completed, Fire Up grows in power. [• Gain a stack-able 3/3.5/4% Action Speed bonus to picking-up and dropping Survivors, breaking Pallets and Breakable Walls, damaging Generators, and vaulting Windows, up to a maximum of 15/17.5/20%.] ''Now why don't you just fucking die?'' — Freddy Krueger"
+	exit
+If 2 {afterlc} = "forcedpenance"
+	Chat Send "[Killer | Executioner] Those who stand in the way of duty will suffer harsh judgement. Survivors who take a Protection Hit suffer from the Broken Status Effect for the next 60/70/80 seconds."
+	exit
+If 2 {afterlc} = "franklin'sdemise" or {afterlc} = "franklinsdemise" or {afterlc} = "franklin's" or {afterlc} = "franklins"
+	Chat Send "[Killer | Cannibal] Your vicious Basic Attacks make Survivors drop their Item on impact. [• If not recovered within 150/120/90 seconds, the lost Item will be consumed by The Entity. • The Auras of lost Items are revealed to you within 32 meters and slowly fade from white to red while the timer elapses.] ''Sally, I hear something. Stop! Stop!'' — Franklin Hardesty"
+	exit
+If 2 {afterlc} = "furtivechase" or {afterlc} = "furtive"
+	Chat Send "[Killer | Ghost Face] You become obsessed with one Survivor. You lurk in the shadows, eliminating your victims one by one. Each time you hook your Obsession, you gain 1 Token, up to a maximum of 2/3/4 Tokens: [• While in a Chase, your Terror Radius is reduced by 4 meters per accumulated Token. • When a Survivor rescues the Obsession from the Hook, that Survivor will become the new Obsession. • All accumulated Tokens are lost when Obsession is sacrificed or killed.] You can only be obsessed with one Survivor at a time. ''You have no idea what I have planned for you. It'll be in the news for weeks. I'll make sure of that.'' — The Ghost Face"
+	exit
+If 2 {afterlc} = "gearhead"
+	Chat Send "[Killer | Deathslinger] You have got an ear for well-oiled gears. After hitting a Survivor twice with your Basic Attack, Gearhead activates for 20/25/30 seconds. [• Each time a Survivor succeeds a Good Skill Check while repairing, the Generator will be revealed by a yellow Aura for as long as it continues being repaired.] ''Sometimes a man's best work is what puts him in the grave.'' — The Prison Warden"
+	exit
+If 2 {afterlc} = "hangman'strick" or {afterlc} = "hangmanstrick"
+	Chat Send "[Killer | Pig] Unlocks potential in your Aura-reading ability and your ingenious modifications to Hooks alert you of tampering. [• Gain a Loud Noise notification whenever a Survivor begins sabotaging a Hook. • While carrying a Survivor, see the Aura of any Survivor within 2/4/6 meters of any Hook.] ''No excuses, no equivocations... No crying.'' — Amanda Young"
+	exit
+If 2 {afterlc} = "hex:bloodfavour" or {afterlc} = "hexbloodfavour" or {afterlc} = "bloodfavour"
+	Chat Send "[Killer | Blight] A Hex that gains the favour of The Entity when blood is spilt. Hitting a Survivor with your Basic Attack prompts The Entity to hold all Pallets within a radius of 16 meters from your location in place for the next 15 seconds, preventing Survivors from pulling them down. Hex: Blood Favour has a cool-down of 60/50/40 seconds. The Hex effects persist as long as the related Hex Totem is standing. ''It would be no leap of the imagination to suggest that the Trials are a biological response of sorts.'' — Journal of Talbot Grimes"
+	exit
+If 2 {afterlc} = "hex:crowdcontrol" or {afterlc} = "hexcrowdcontrol" or {afterlc} = "crowdcontrol"
+	Chat Send "[Killer | Trickster] A Hex that ensures those lesser than you are properly herded. Survivors who perform a rushed vault through a Window prompt The Entity to block it for the next 10/12/14 seconds. The Hex effects persist as long as the related Hex Totem is standing. ''You have no control. People like you never did.'' — Ji-Woon Hak"
+	exit
+If 2 {afterlc} = "hex:devourhope" or {afterlc} = "hexdevourhope" or {afterlc} = "devourhope" or {afterlc} = "devour"
+	Chat Send "[Killer | Hag] A Hex rooting its power on hope. The false hope of Survivors ignites your hunger. Each time a Survivor is rescued from a Hook when you are at least 24 meters away, Devour Hope receives 1 Token: [• 2 Tokens: 10 seconds after hooking a Survivor, gain a 3/4/5% Haste Status Effect for the next 10 seconds. • 3 Tokens: Survivors suffer permanently from the Exposed Status Effect. • 5 Tokens: You are granted the ability to kill all Survivors by your own hand.] The Hex effects persist as long as the related Hex Totem is standing. ''If you do nothing, you have their blood on your hands. If you save them, her hunger grows.''"
+	exit
+If 2 {afterlc} = "hex:hauntedground" or {afterlc} = "hexhauntedground" or {afterlc} = "hauntedground"
+	Chat Send "[Killer | Spirit] Two trapped Hex Totems will spawn in the Trial Grounds. [• When either Hex Totem is cleansed, all Survivors suffer from the Exposed Status Effect for 40/50/60 seconds. • The second Hex Totem will immediately turn into a Dull Totem.] ''Her home became profane.''"
+	exit
+If 2 {afterlc} = "hex:huntresslullaby" or {afterlc} = "hexhuntresslullaby" or {afterlc} = "huntresslullaby" or {afterlc} = "lullaby"
+	Chat Send "[Killer | Huntress] A Hex rooting its power in despair. Your hunt is an irresistible song of dread which muddles your prey's attention. Survivors receive a 2/4/6% Regression penalty on Failed Skill Checks for Repair and Healing actions. Hex: Huntress Lullaby grows in power each time you hook a Survivor, gaining 1 Token, and affecting Repair and Healing Skill Checks: [• 1 Token: shortens the time between the Warning sound and the Skill Check by -14%. • 2 Tokens: shortens the time between the Warning sound and the Skill Check by -28%. • 3 Tokens: shortens the time between the Warning sound and the Skill Check by -42%. • 4 Tokens: shortens the time between the Warning sound and the Skill Check by -56%. • 5 Tokens: disables the Warning sound.] The Hex effects persist as long as the related Hex Totem is standing. ''That song, it drives me crazy!''"
+	exit
+If 2 {afterlc} = "hex:nooneescapesdeath" or {afterlc} = "hexnooneescapesdeath" or {afterlc} = "nooneescapesdeath" or {afterlc} = "hex:noed" or {afterlc} = "hexnoed" or {afterlc} = "noed" 
+	Chat Send "[Killer | All] A Hex rooting its power on hope. You are animated by the power of your Hex Totem when the Survivors are on the verge of escaping. Once the Exit Gates are powered and there is at least one Dull Totem remaining in the Trial Grounds, Hex: No One Escapes Death activates and lights the Totem: [• Your Movement speed is increased by 2/3/4%. • Survivors suffer from a permanent Exposed Status Effect.] Hex: No One Escapes Death remains inactive if no Dull Totems are available. The Hex effects persist as long as the related Hex Totem is standing. ''And the beast became faster and more powerful as if The Entity's shadowy whips were lashing at its back.''"
+	exit
+If 2 {afterlc} = "hex:retribution" or {afterlc} = "hexretribution" or {afterlc} = "retribution"
+	Chat Send "[Killer | Deathslinger] A Hex that lashes out upon its destruction. Those who cross you will be punished. Survivors cleansing a Dull Totem suffer from the Oblivious Status Effect for 35/40/45 seconds. After cleansing a Hex Totem, the Auras of all Survivors are revealed to you for 10 seconds. The Hex effects persist as long as the related Hex Totem is standing. ''Bloody fool, you pulled the trigger on yourself.'' — Caleb Quinn"
+	exit
+If 2 {afterlc} = "hex:ruin" or {afterlc} = "hexruin" or {afterlc} = "ruin"
+	Chat Send "[Killer | Hag] A Hex that affects all Survivor's Generator Repair progress. All Generators automatically regress at 100/150/200% of the normal Regression speed whenever they are not being repaired. The Hex effects persist as long as the related Hex Totem is standing. ''A curse is upon you. It will cause your ruin.''"
+	exit
+If 2 {afterlc} = "hex:thethirdseal" or {afterlc} = "hexthethirdseal" or {afterlc} = "thethirdseal" or {afterlc} = "thirdseal"
+	Chat Send "[Killer | Hag] A Hex that hinders the Survivors' Aura-reading abilities. The last 2/3/4 Survivors hit with your Basic Attack suffer from the Blindness Status Effect. The Hex effects persist as long as the related Hex Totem is standing. ''She touched your skin, you bear the witch's mark!''"
+	exit
+If 2 {afterlc} = "hex:thrillofthehunt" or {afterlc} = "hexthrillofthehunt" or {afterlc} = "thrillofthehunt"
+	Chat Send "[Killer | All] A Hex rooting its power on hope. The false hope of Survivors fills you with excitement and strengthens your Totems. For each Totem remaining in the Trial Grounds, Hex: Thrill of the Hunt gains 1 Token. [• Survivors suffer from a stack-able 4/5/6% Cleansing Speed penalty per Token, up to a maximum of 20/25/30%.] Hex: Thrill of the Hunt grants a stack-able 10% bonus Bloodpoints for actions in the Hunter Category per Token, up to a maximum of 50%. Survivors starting to cleanse any Hex Totem will trigger a Loud Noise notification. The Hex effects persist as long as the related Hex Totem is standing."
+	exit
+If 2 {afterlc} = "hex:undying" or {afterlc} = "hexundying" or {afterlc} = "undying"
+	Chat Send "[Killer | Blight] A Hex which maintains the vile powers that flow throughout the Trial. The Auras of Survivors within 2/3/4 meters of any Dull Totem are revealed to you. [• When another Perk's Hex Totem is cleansed, its Hex is transferred to the Hex: Undying Totem, including any accumulated Tokens, disabling Hex: Undying instead.] The Hex effects persist as long as the related Hex Totem is standing."
+	exit
+If 2 {afterlc} = "hoarder"
+	Chat Send "[Killer | Twins] You protect what little you have and are perceptive to those rummaging through your stockpiles. Receive a Loud Noise notification for 4 seconds when Survivors interact with a Chest or when they pick up an Item within 32/48/64 meters of your location. [• The Trial begins with 2 additional Chests spawning in the Trial Grounds.]"
+	exit
+If 2 {afterlc} = "hysteria"
+	Chat Send "[Killer | Nemesis] You know how to brutalise one member of a team to cause a panic. Whenever you put a healthy Survivor into the Injured State with a Basic Attack, all injured Survivors suffer from the Oblivious Status Effect for 20/25/30 seconds. Hysteria has a cool-down of 60 seconds. ''Sorry I got a little jumpy there. Didn't know quite what to expect.'' — Robert Kendo"
+	exit
+If 2 {afterlc} = "i'mallears" or {afterlc} = "imallears" or {afterlc} = "allears"
+	Chat Send "[Killer | Ghost Face] Unlocks potential in your Aura-reading ability, sharpening your keen senses in the dark Realm of The Entity. Any Survivor performing a rushed action within 48 meters of your location has their Aura revealed to you for 6 seconds. I'm All Ears can only be triggered once every 60/50/40 seconds. ''There is no need to worry. I've been preparing my whole life for this. — The Ghost Face''"
+	exit
+If 2 {afterlc} = "infectiousfright" or {afterlc} = "infectious"
+	Chat Send "[Killer | Plague] The cries of the unfaithful make your heart leap. Whenever a Survivor is put into the Dying State by any means, all other Survivors within your Terror Radius will scream and reveal their current location to you for 4/5/6 seconds. ''Horror overcomes the heart of infidels who cry at the feet of the fallen.'' (Hymn of Praise, 11.4)"
+	exit
+If 2 {afterlc} = "insidious"
+	Chat Send "[Killer | All] Unlocks your stealth ability. After standing still for 4/3/2 seconds, you are granted the Undetectable Status Effect until you act or move again."
+	exit
+If 2 {afterlc} = "irongrasp"
+	Chat Send "[Killer | All] Your powerful grasp on Survivors causes escapes to be nearly impossible. While carrying a Survivor: [• The Survivor's Struggle Effects from Wiggling, causing you to strafe sideways, are reduced by 75%. • The time for the Survivor to wiggle free from your grasp is increased by 4/8/12%.]"
+	exit
+If 2 {afterlc} = "ironmaiden"
+	Chat Send "[Killer | Legion] You open Lockers 30/40/50% faster. Survivors who exit Lockers suffer from the Exposed Status Effect for 30 seconds and their location is revealed to you for 4 seconds. ''This is no place for cowards.'' — The Legion"
+	exit
+If 2 {afterlc} = "knockout"
+	Chat Send "[Killer | Cannibal] The trauma caused by your brutal attacks makes crying for help painfully difficult. When putting a Survivor into the Dying State with your Basic Attack: [• Their Aura is not revealed to any Survivor farther away from them than 32/24/16 meters. • For the next 15 seconds, the dying Survivor suffers from a decreased Field of View, the Blindness Status Effect, and crawls 50% slower.] ''Oh, that gun's no good. The old way... with a sledge! You see, that way's better. They die better that way.'' — Nubbins Sawyer"
+	exit
+If 2 {afterlc} = "lethalpursuer"
+	Chat Send "[Killer | Nemesis] You have been designed to track down and eliminate targets. At the start of the Trial, the Auras of all Survivors are revealed to you for 5/6/7 seconds. ''...it knows what it wants and won't stop till it gets it.'' — Carlos Oliveira"
+	exit
+If 2 {afterlc} = "lightborn"
+	Chat Send "[Killer | Hillbilly] Unlike other beasts of The Fog, you have adapted to light. The Auras of Survivors attempting to blind you with a Flashlight are revealed to you for 6/8/10 seconds. Lightborn grants immunity from being blinded by Flashlights, Firecrackers, Flashbangs, or Blast Mines. ''These monsters... they adapt! They emerge with strange new abilities.'' — Vigo, Vigo's Journal"
+	exit
+If 2 {afterlc} = "madgrit"
+	Chat Send "[Killer | Legion] While carrying a Survivor, you suffer no cool-down on missed attacks. [• Successfully hitting a Survivor will pause the carried Survivor's Wiggling Progression for 2/3/4 seconds.] ''There's no getting out of this now. We're too good at it.'' — The Legion"
+	exit
+If 2 {afterlc} = "makeyourchoice"
+	Chat Send "[Killer | Pig] Each time a Survivor is rescued from a Hook when you are at least 32 meters away, Make Your Choice activates: [• The Rescuer suffers from the Exposed Status Effect for the next 40/50/60 seconds.] Make Your Choice has a cool-down of 40/50/60 seconds. ''You'd be surprised what tools can save a life.'' — Amanda Young"
+	exit
+If 2 {afterlc} = "mindbreaker"
+	Chat Send "[Killer | Demogorgon] Your distressing presence drains and weakens your prey. Whenever a Survivor is repairing a Generator, they suffer from the Exhausted Status Effect. [• If the Survivor is already Exhausted, their Status Effect's timer will be paused. • The Status Effect lingers for 3/4/5 seconds after stopping to repair.] ''The specimen's apparent telepathic ability can evoke feelings of dread and fatigue in nearby individuals.'' — Hawkins National Laboratory"
+	exit
+If 2 {afterlc} = "monitor&abuse" or {afterlc} = "monitorandabuse" or {afterlc} = "monitor"
+	Chat Send "[Killer | Doctor] Meticulous in your approach, terrifying in your application. Your base Terror Radius is increased by 8 meters. [• Whenever you are outside of a Chase, your Terror Radius is reduced by 16 meters while your Field of View is increased by 3/5/10°.] Field of View gains do not stack. ''It's time for your treatment!.'' — Herman Carter, The Doctor"
+	exit
+If 2 {afterlc} = "monstrousshrine"
+	Chat Send "[Killer | All] Your fervent care of the Hooks found in the Basement has aroused The Entity's interest. The Basement Hooks possess the following benefits: [• Hook Progression is accelerated by 3/6/9%. • Self-Unhook difficulty is increased by 5/10/15%. • Self-Unhook penalty is increased by 3/6/9%.] ''Then you will know that there is no escape. When hanging in the depths, you face the dark one.''"
+	exit
+If 2 {afterlc} = "nemesis"
+	Chat Send "[Killer | Oni] You seek retribution on those who have wronged you. Each time a Survivor blinds you or stuns you using a Pallet or Locker, they become your new Obsession : [• The Survivor suffers from the Oblivious Status Effect for 40/50/60 seconds and their Aura is revealed to you for 4 seconds.] You can only be obsessed with one Survivor at a time. ''Only a fool would spit in a demon's face and declare victory.'' — Renjiro's Doctrine 4:9"
+	exit
+If 2 {afterlc} = "nowayout"
+	Chat Send "[Killer | Trickster] You are not going to let just anyone into the VIP room. For each of the Survivors you manage to hook, No Way Out gains 1 Token: [• When the last Generator is completed, The Entity blocks both Exit Gate Switches for 10 seconds and an additional 4/6/8 seconds per Token in your possession, up to a combined maximum of 26/34/42 seconds.] ''That sound when you bleed... let me hear it again'' — Ji-Woon Hak"
+	exit
+If 2 {afterlc} = "oppression"
+	Chat Send "[Killer | Twins] Life has been difficult for you, so you will make it difficult for others. When damaging a Generator, up to 3 other random Generators also begin regressing. [• Triggers a difficult Skill Check if the selected Generators are currently being repaired. Oppression has a cool-down of 120/100/80 seconds.] ''Damn them as they would damn us.'' — Charlotte Deshayes"
+	exit
+If 2 {afterlc} = "overcharge"
+	Chat Send "[Killer | Doctor] You are fuelled by your hate for progress. Damaging a Generator overcharges it: [• The next Survivor interacting with it will be faced with a difficult Skill Check. • Failing the Skill Check results in an additional Progression loss of 3/4/5%. • Succeeding the Skill Check does not grant any bonus Progression.] ''It is a trap. But a trap one must step in...''"
+	exit
+If 2 {afterlc} = "overwhelmingpresence"
+	Chat Send "[Killer | Doctor] Your presence alone instils great fear. Survivors within your Terror Radius suffer from inefficiency: [• When using an Item, its Depletion rate is increased by 80/90/100%.] ''Shit!! I dropped the gauze!''"
+	exit
+If 2 {afterlc} = "playwithyourfood"
+	Chat Send "[Killer | Shape] You become obsessed with one Survivor. Each time you chase your Obsession and let them escape, Play with Your Food receives 1 Token, up to a maximum of 3 Tokens: [• Each Token applies a stack-able 3/4/5% Haste Status Effect, up to a maximum of 9/12/15%. • Performing a Basic or Special Attack consumes 1 Token.] Play with Your Food has a cool-down of 10 seconds on Token-accumulation. You can only be obsessed with one Survivor at a time. ''You've fooled them, haven't you Michael? But not me.'' — Dr Sam Loomis"
+	exit
+If 2 {afterlc} = "popgoestheweasel" or {afterlc} = "pop"
+	Chat Send "[Killer | Clown] A deep bond with The Entity unlocks great strength. After hooking a Survivor, Pop Goes the Weasel activates for the next 35/40/45 seconds: [• The next Generator you damage instantly loses 25% Progression. • Regular Generator Regression applies afterwards and Pop Goes the Weasel deactivates.]"
+	exit
+If 2 {afterlc} = "predator"
+	Chat Send "[Killer | Wraith] Your acute tracking ability allows you to hone in on disturbances left by running Survivors. The Scratch Marks left by Survivors spawn slightly/moderately/considerably closer together. ''Never stop moving and hope you're always two steps ahead of the beast.'' — Unknown, Notebook"
+	exit
+If 2 {afterlc} = "rancor"
+	Chat Send "[Killer | Spirit] You become obsessed with one Survivor. Each time a Generator is completed: [• Your Aura is revealed to the Obsession for 5/4/3 seconds. • All Survivors' locations are revealed to you for 3 seconds.] Once all Generators are completed: [• The Obsession suffers from a permanent Exposed Status Effect. • You are granted the ability to kill the Obsession by your own hand.] You can only be obsessed with one Survivor at a time."
+	exit
+If 2 {afterlc} = "rememberme"
+	Chat Send "[Killer | Nightmare] You become obsessed with one Survivor. Each time you hit your Obsession with a Basic Attack, Remember Me gains 1 Token: [• The Opening time of both Exit Gates is increased by 4 seconds per Token, up to a maximum of 8 additional/12 additional/16 additional seconds. • The Obsession is unaffected by this penalty.] You can only be obsessed with one Survivor at a time. ''You don't remember? You must. You're my number one, and you'll never wake up again.'' — Freddy Krueger"
+	exit
+If 2 {afterlc} = "savethebestforlast"
+	Chat Send "[Killer | Shape] You become obsessed with one Survivor. Each time you hit a Survivor other than your Obsession with a Basic Attack, Save the Best for Last gains 1 Token, up to a maximum of 8 Tokens: [• Gain a stack-able 5% Cool-down reduction on successful attacks per Token, up to a maximum of 40%.] Each time you hit your Obsession with a Basic Attack, Save the Best for Last loses 4/3/2 Tokens. [• When the Obsession is sacrificed or killed, you can neither gain nor lose any more Tokens.] You can only be obsessed with one Survivor at a time. ''Death has come to your little town, Sheriff.'' — Dr Sam Loomis"
+	exit
+If 2 {afterlc} = "shadowborn"
+	Chat Send "[Killer | Wraith] You have a keen vision in the darkness of the night. Your Field of View is increased by 9/12/15°. Field of View gains do not stack. ''Shining in the darkest dark, his eyes pierce the night and sting your soul.''"
+	exit
+If 2 {afterlc} = "sloppybutcher"
+	Chat Send "[Killer | All] You know where to hit to make them bleed. Wounds inflicted by Basic Attacks cause Survivors to suffer from the Haemorrhage and Mangled Status Effects: [• Haemorrhage increases the Survivor's Bleeding frequency by 50/75/100%. • Both Status Effects are removed once the Survivor is fully healed.] ''It's in its sadistic nature. There is no swift kill as it delights in the obscene spectacle of our agonising suffering.''"
+	exit
+If 2 {afterlc} = "spiesfromtheshadows" or {afterlc} = "spies"
+	Chat Send "[Killer | All] Crows found throughout the Trial Grounds can communicate directly with you. Crows startled by Survivors within 20/28/36 meters alert you with a Loud Noise notification. Spies from the Shadows has a cool-down of 5 seconds between alerts. ''In the shadows they torment, scarring our minds with each scream.''"
+	exit
+If 2 {afterlc} = "spiritfury"
+	Chat Send "[Killer | Spirit] Each Pallet you break magnifies the wrath of The Entity. After breaking 4/3/2 Pallets, the next time you are stunned by a Pallet, The Entity will instantly break it. [• You still suffer from the Stun penalty.] ''Fury is her blood.''"
+	exit
+If 2 {afterlc} = "starstruck"
+	Chat Send "[Killer | Trickster] Your unmatched showmanship dazzles all. When carrying a Survivor, Starstruck activates: [• Survivors suffer from the Exposed Status Effect while in your Terror Radius. • The Status Effect lingers for 26/28/30 seconds after leaving your Terror Radius.] After hooking or dropping the carried Survivor, Starstruck deactivates: [• The Status Effect persists for 26/28/30 seconds for any Survivor inside your Terror Radius at that moment.] Starstruck has a cool-down of 60 seconds once the Survivor is no longer being carried. ''Enjoy this moment, few get so close.'' — Ji-Woon Hak"
+	exit
+If 2 {afterlc} = "stridor"
+	Chat Send "[Killer | Nurse] You are acutely sensitive to the breathing of your prey. All Survivors' Grunts of Pain are 25/50/50% louder and their regular breathing is 0/0/25% louder. ''If you don't stop and catch your breath... she will.''"
+	exit
+If 2 {afterlc} = "surge"
+	Chat Send "[Killer | Demogorgon] Your eerie presence charges the air and interferes with technology. When you put a Survivor into the Dying State with your Basic Attack, all Generators within 32 meters of you instantly explode and start regressing. [• Applies an immediate 8% Progression penalty.] Surge has a cool-down of 60/50/40 seconds. ''The creature appears to have some unknown influence over electricity and nearby electronics.'' — Hawkins National Laboratory"
+	exit
+If 2 {afterlc} = "surveillance"
+	Chat Send "[Killer | Pig] Unlocks potential in your Aura-reading ability. The Auras of regressing Generators are highlighted in white. [• If the Regression process is interrupted on a Generator, its Aura will be highlighted in yellow for 8/12/16 seconds.] Surveillance increases the audible range of Survivors' Generator-repairing noises by 8 meters. ''Are you gonna behave?'' — Amanda Young"
+	exit
+If 2 {afterlc} = "territorialimperative"
+	Chat Send "[Killer | Huntress] Unlocks potential in your Aura-reading ability. The Aura of a Survivor entering the Basement when you are at least 32 meters away is revealed to you for 3 seconds. Territorial Imperative has a cool-down of 30/25/20 seconds. ''We're not safe anywhere...''"
+	exit
+If 2 {afterlc} = "thanatophobia" or {afterlc} = "thana"
+	Chat Send "[Killer | Nurse] Their courage fades in the face of their undeniable mortality. Each injured, dying, or hooked Survivor incurs a stack-able 4/4.5/5% penalty to all Survivors' Repairing, Sabotaging, and Cleansing Action speeds, up to a maximum of 16/18/20%. ''She plays with us and revels in our pain.''"
+	exit
+If 2 {afterlc} = "thrillingtremors" or {afterlc} = "thrilling"
+	Chat Send "[Killer | Ghost Face] Your dark designs and shrewd composure rouse The Entity. After picking up a Survivor, all Generators not currently being repaired by Survivors are blocked by The Entity for the next 16 seconds. [• The Auras of blocked Generators are highlighted to you in white.] Thrilling Tremors has a cool-down of 100/80/60 seconds. ''The night assists me and it's endless here.'' — The Ghost Face"
+	exit
+If 2 {afterlc} = "tinkerer"
+	Chat Send "[Killer | Hillbilly] Whenever a Generator is repaired to 70%, it triggers a Loud Noise notification and you are granted the Undetectable Status Effect for the next 12/14/16 seconds."
+	exit
+If 2 {afterlc} = "trailoftorment" or {afterlc} = "trail"
+	Chat Send "[Killer | Executioner] You guide your victims along a path of pain and punishment. After kicking a Generator, you are granted the Undetectable Status Effect until that Generator stops regressing or you damage a Survivor by any means. [• The Aura of that Generator is revealed to all Survivors in yellow.] Trail of Torment has a cool-down of 80/70/60 seconds."
+	exit
+If 2 {afterlc} = "unnervingpresence"
+	Chat Send "[Killer | Trapper] Your presence alone instils great fear. For all Survivors repairing, healing, or sabotaging within your Terror Radius : [• Skill Check Trigger odds are increased by 10%. • Skill Check Success zones are reduced by 40/50/60%.] ''Its presence befalls us.''"
+	exit
+If 2 {afterlc} = "unrelenting"
+	Chat Send "[Killer | All] You recuperate faster from missed attacks made with your main weapon. The Cool-down on missed Basic Attacks is reduced by 20/25/30%."
+	exit
+If 2 {afterlc} = "whispers"
+	Chat Send "[Killer | All] You have a rudimentary understanding of The Entity's voice. Sporadically hear the whispers of The Entity when a Survivor is within 48/40/32 meters of your location. ''It's unclear as to the motivations of The Fog, but it is undeniable that it often takes the beast's side.'' — Unknown, Notebook"
+	exit
+If 2 {afterlc} = "zanshintactics" or {afterlc} = "zanshin"
+	Chat Send "[Killer | Oni] Unlocks potential in your Aura-reading ability. You are mentally alert and aware of key points on the battlefield. The Auras of Breakable Walls, Pallets, and Windows are revealed to you within 24/28/32 meters. ''Within your enemy's strength is weakness.'' — Renjiro's Doctrine 12:5"
+	exit
+If 2 {afterlc} = ""
+	Chat Send "To use this command type the perk name after the command !perk (capitalization does not matter). Example: !perk Autodidact"
+	exit
+If 2 {hexlc} = "hex"
+	Chat Send "The search for hex was not found. Here is a list of the current hexes: • Blood Favour • Crowd Control • Devour Hope • Haunted Ground • Huntress Lullaby • No One Escapes Death • Retribution • Ruin • The Third Seal • Thrill of the Hunt • Undying"
+	exit
+Chat Send "The searched perk was not found"
