@@ -356,7 +356,7 @@ If 2 {afterlc} = "enduring"
 	Chat Send "[Killer | Hillbilly] You are resilient to pain. The duration of Pallet Stuns is reduced by 40/45/50%. ''He stops at nothing.''"
 	exit
 If 2 {afterlc} = "eruption"
-	Chat Send "[Killer | Nemesis] The NE-α parasite provides you with the intelligence and awareness needed to set a trap. After kicking a Generator, its Aura is highlighted in yellow. [• When you put a Survivor into the Dying State with a Basic Attack, every affected Generator explodes, regressing their progress by 6% and causing their Auras to disappear. • Any Survivor repairing a Generator when it explodes will scream and suffer from the Incapacitated Status Effect for 10/12/14 seconds.] Eruption has a cool-down of 90 seconds. ''It can use weapons?'' — Jill Valentine"
+	Chat Send "[Killer | Nemesis] The NE-α parasite provides you with the intelligence and awareness needed to set a trap. After kicking a Generator, its Aura is highlighted in yellow. [• When you put a Survivor into the Dying State by any means, every affected Generator explodes, regressing their progress by 6% and causing their Auras to disappear. • Any Survivor repairing a Generator when it explodes will scream and suffer from the Incapacitated Status Effect for 12/14/16 seconds.] Eruption has a cool-down of 30 seconds. ''It can use weapons?'' — Jill Valentine"
 	exit
 If 2 {afterlc} = "fireup"
 	Chat Send "[Killer | Nightmare] The increased pressure of losing your preys fills you with anger and gives you unsuspected motivation. Each time a Generator is completed, Fire Up grows in power. [• Gain a stack-able 3/3.5/4% Action Speed bonus to picking-up and dropping Survivors, breaking Pallets and Breakable Walls, damaging Generators, and vaulting Windows, up to a maximum of 15/17.5/20%.] ''Now why don't you just fucking die?'' — Freddy Krueger"
@@ -413,7 +413,7 @@ If 2 {afterlc} = "hoarder"
 	Chat Send "[Killer | Twins] You protect what little you have and are perceptive to those rummaging through your stockpiles. Receive a Loud Noise notification for 4 seconds when Survivors interact with a Chest or when they pick up an Item within 32/48/64 meters of your location. [• The Trial begins with 2 additional Chests spawning in the Trial Grounds.]"
 	exit
 If 2 {afterlc} = "hysteria"
-	Chat Send "[Killer | Nemesis] You know how to brutalise one member of a team to cause a panic. Whenever you put a healthy Survivor into the Injured State with a Basic Attack, all injured Survivors suffer from the Oblivious Status Effect for 20/25/30 seconds. Hysteria has a cool-down of 60 seconds. ''Sorry I got a little jumpy there. Didn't know quite what to expect.'' — Robert Kendo"
+	Chat Send "[Killer | Nemesis] You know how to brutalise one member of a team to cause a panic. Whenever you put a healthy Survivor into the Injured State by any means, all injured Survivors suffer from the Oblivious Status Effect for 20/25/30 seconds. Hysteria has a cool-down of 30 seconds. ''Sorry I got a little jumpy there. Didn't know quite what to expect.'' — Robert Kendo"
 	exit
 If 2 {afterlc} = "i'mallears" or {afterlc} = "imallears" or {afterlc} = "allears"
 	Chat Send "[Killer | Ghost Face] Unlocks potential in your Aura-reading ability, sharpening your keen senses in the dark Realm of The Entity. Any Survivor performing a rushed action within 48 meters of your location has their Aura revealed to you for 6 seconds. I'm All Ears can only be triggered once every 60/50/40 seconds. ''There is no need to worry. I've been preparing my whole life for this. — The Ghost Face''"
@@ -434,7 +434,7 @@ If 2 {afterlc} = "knockout"
 	Chat Send "[Killer | Cannibal] The trauma caused by your brutal attacks makes crying for help painfully difficult. When putting a Survivor into the Dying State with your Basic Attack: [• Their Aura is not revealed to any Survivor farther away from them than 32/24/16 meters. • For the next 15 seconds, the dying Survivor suffers from a decreased Field of View, the Blindness Status Effect, and crawls 50% slower.] ''Oh, that gun's no good. The old way... with a sledge! You see, that way's better. They die better that way.'' — Nubbins Sawyer"
 	exit
 If 2 {afterlc} = "lethalpursuer"
-	Chat Send "[Killer | Nemesis] You have been designed to track down and eliminate targets. At the start of the Trial, the Auras of all Survivors are revealed to you for 5/6/7 seconds. ''...it knows what it wants and won't stop till it gets it.'' — Carlos Oliveira"
+	Chat Send "[Killer | Nemesis] You have been designed to track down and eliminate targets. At the start of the Trial, the Auras of all Survivors are revealed to you for 7/8/9 seconds. ''...it knows what it wants and won't stop till it gets it.'' — Carlos Oliveira"
 	exit
 If 2 {afterlc} = "lightborn"
 	Chat Send "[Killer | Hillbilly] Unlike other beasts of The Fog, you have adapted to light. The Auras of Survivors attempting to blind you with a Flashlight are revealed to you for 6/8/10 seconds. Lightborn grants immunity from being blinded by Flashlights, Firecrackers, Flashbangs, or Blast Mines. ''These monsters... they adapt! They emerge with strange new abilities.'' — Vigo, Vigo's Journal"
