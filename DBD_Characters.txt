@@ -154,3 +154,16 @@ If 2 {afterlc} = "nemesis"
 	Chat Send "Perks: Lethal Pursuer || Hysteria || Eruption"
 	exit
 Chat Send "The searched character was not found"
+
+OnCommand e 0 !random !rand !randomsurvivor !randsurvivor !randsur !randomkiller !randkiller !randomkill !randkill
+Function 'return {afterlc: [after].toLowerCase().replace(/[ ]/g, "").substr(0, 3)}'
+Function 'return {type1: [message].toLowerCase().substr(7, 3)}'
+Function 'return {type2: [message].toLowerCase().substr(5, 3)}'
+If 3 {afterlc} = "kil" or {type1} = "kil" or {type2} = "kil"
+	Loop 1 2
+		Random Equal "Chat Send 'Evan MacMillan - Trapper'" "Chat Send 'Philip Ojomo - Wraith'" "Chat Send 'Max Thompson Jr. - Hillbilly'" "Chat Send 'Sally Smithson - Nurse'" "Chat Send 'Michael Myers - Shape'" "Chat Send 'Lisa Sherwood - Hag'" "Chat Send 'Herman Carter - Doctor'" "Chat Send 'Anna - Huntress'" "Chat Send 'Bubba Sawyer - Cannibal'" "Chat Send 'Freddy Krueger - Nightmare'" "Chat Send 'Amanda Young - Pig'" "Chat Send 'Jeffrey Hawk - Clown'" "Chat Send 'Rin Yamaoka - Spirit'" "Chat Send 'Frank, Julie, Susie, Joey - Legion'" "Chat Send 'Adiris - Plague'" "Chat Send 'Danny Johnson - Ghost Face'" "Chat Send 'Demogorgon - Demogorgon'" "Chat Send 'Kazan Yamaoka - Oni'" "Chat Send 'Caleb Quinn - Deathslinger'" "Chat Send 'Pyramid Head - Executioner'" "Chat Send 'Talbot Grimes - Blight'" "Chat Send 'Victor & Charlotte Deshayes - Twins'" "Chat Send 'Ji-Woon Hak - Trickster'" "Chat Send 'Nemesis T-Type - Nemesis'"
+	exit
+If 2 {afterlc} = "sur" or {type1} = "sur" or {type2} = "sur"
+	Random Equal "Chat Send 'Dwight Fairfield'" "Chat Send 'Meg Thomas'" "Chat Send 'Claudette Morel'" "Chat Send 'Jake Park'" "Chat Send 'Nea Karlsson'" "Chat Send 'Laurie Strode'" "Chat Send 'Ace Visconti'" "Chat Send 'Bill Overbeck'" "Chat Send 'Feng Min'" "Chat Send 'David King'" "Chat Send 'Quentin Smith'" "Chat Send 'David Tapp'" "Chat Send 'Kate Denson'" "Chat Send 'Adam Francis'" "Chat Send 'Jeff Johansen'" "Chat Send 'Jane Romero'" "Chat Send 'Ash J. Williams'" "Chat Send 'Nancy Wheeler'" "Chat Send 'Steve Harrington'" "Chat Send 'Yui Kimura'" "Chat Send 'Zarina Kassir'" "Chat Send 'Cheryl Mason'" "Chat Send 'Felix Richter'" "Chat Send 'Élodie Rakoto'" "Chat Send 'Yun-Jin Lee'" "Chat Send 'Jill Valentine'" "Chat Send 'Leon Scott Kennedy'"
+	exit
+Chat Send "The attempted random command was unrecognized. Try '!rand killer' or '!rand survivor'"
