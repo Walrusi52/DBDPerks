@@ -545,3 +545,33 @@ If 2 {hexlc} = "hex"
 	Chat Send "The search for hex was not found. Here is a list of the current hexes: • Blood Favour • Crowd Control • Devour Hope • Haunted Ground • Huntress Lullaby • No One Escapes Death • Retribution • Ruin • The Third Seal • Thrill of the Hunt • Undying"
 	exit
 Chat Send "The searched perk was not found"
+
+OnCommand e 0 !perkwheelsurvivor !perkwheelsur
+	List Import Perk '["Ace in the Hole","Adrenaline","Aftercare","Alert","Any Means Necessary","Appraisal","Autodidact","Babysitter","Balanced Landing","Better Together","Bite the Bullet","Blast Mine","Blood Pact","Boil Over","Bond","Borrowed Time","Botany Knowledge","Breakdown","Breakout","Buckle Up","Built to Last","Calm Spirit","Camaraderie","Counterforce","Dance With Me","Dark Sense","Dead Hard","Deception","Decisive Strike","Déjà Vu","Deliverance","Desperate Measures","Detective`s Hunch","Distortion","Diversion","Empathy","Fast Track","Fixated","Flashbang","Flip-Flop","For the People","Head On","Hope","Inner Strength","Iron Will","Kindred","Leader","Left Behind","Lightweight","Lithe","Lucky Break","Mettle of Man","No Mither","No One Left Behind","Object of Obsession","Off the Record","Open-Handed","Pharmacy","Plunderer`s Instinct","Poised","Power Struggle","Premonition","Prove Thyself","Quick & Quiet","Red Herring","Repressed Alliance","Resilience","Resurgence","Rookie Spirit","Saboteur","Second Wind","Self-Care","Self-Preservation","Slippery Meat","Small Game","Smash Hit","Sole Survivor","Solidarity","Soul Guard","Spine Chill","Sprint Burst","Stake Out","Streetwise","Technician","Tenacity","This Is Not Happening","Up the Ante","Unbreakable","Urban Evasion","Vigil","Visionary","Wake Up!","We`ll Make It","We`re Gonna Live Forever","Windows of Opportunity"]'
+	List Import MyList '[]'
+	List Count Perk
+	Loop 6 4
+		Param Add count -1
+		Random Number 0 {count}
+		List Get Perk {number}
+		List Add MyList {value}
+		List Remove Perk {number}
+		List Count Perk
+	List Export MyList
+	Chat Send {MyList}	
+	List Empty MyList
+	
+OnCommand e 0 !perkwheelkiller !perkwheelkill
+	List Import Perk '["A Nurse`s Calling","Agitation","Bamboozle","Barbecue & Chilli","Beast of Prey","Bitter Murmur","Blood Echo","Blood Warden","Bloodhound","Brutal Strength","Corrupt Intervention","Coulrophobia","Coup de Grâce","Cruel Limits","Dark Devotion","Dead Man`s Switch","Deathbound","Deerstalker","Discordance","Distressing","Dragon`s Grip","Dying Light","Enduring","Eruption","Fire Up","Forced Penance","Franklin`s Demise","Furtive Chase","Gearhead","Hangman`s Trick","Hex: Blood Favour","Hex: Crowd Control","Hex: Devour Hope","Hex: Haunted Ground","Hex: Huntress Lullaby","Hex: No One Escapes Death","Hex: Retribution","Hex: Ruin","Hex: The Third Seal","Hex: Thrill of the Hunt","Hex: Undying","Hoarder","Hysteria","I`m All Ears","Infectious Fright","Insidious","Iron Grasp","Iron Maiden","Knock Out","Lethal Pursuer","Lightborn","Mad Grit","Make Your Choice","Mindbreaker","Monitor & Abuse","Monstrous Shrine","Nemesis","No Way Out","Oppression","Overcharge","Overwhelming Presence","Play with Your Food","Pop Goes the Weasel","Predator","Rancor","Remember Me","Save the Best for Last","Shadowborn","Sloppy Butcher","Spies from the Shadows","Spirit Fury","Starstruck","Stridor","Surge","Surveillance","Territorial Imperative","Thanatophobia","Thrilling Tremors","Tinkerer","Trail of Torment","Unnerving Presence","Unrelenting","Whispers","Zanshin Tactics"]'
+	List Import MyList '[]'
+	List Count Perk
+	Loop 6 4
+		Param Add count -1
+		Random Number 0 {count}
+		List Get Perk {number}
+		List Add MyList {value}
+		List Remove Perk {number}
+		List Count Perk
+	List Export MyList
+	Chat Send {MyList}	
+	List Empty MyList
