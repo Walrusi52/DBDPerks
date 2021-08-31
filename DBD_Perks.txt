@@ -573,3 +573,55 @@ OnCommand e 0 !perkwheelkiller !perkwheelkill
 		List Count Perk
 	List Join MyList " || "
 	Chat Send {joined}
+
+OnCommand e 0 !randrare
+	Function 'return {afterlc: [after].toLowerCase().replace(/[ ]/g, "")}'
+	List Import Rarity '["Common","Uncommon","Rare","Very Rare","Ultra Rare","Common","Uncommon","Rare","Very Rare","Ultra Rare","Common","Uncommon","Rare","Very Rare","Ultra Rare","Event/Your Choice"]'
+	List Import Common '["Camping Aid Kit","Worn-Out Tools"]'
+	List Import Uncommon '["Flashlight","First Aid Kit","Toolbox"]'
+	List Import Rare '["Sport Flashlight","Broken Key","Map","Emergency Med-Kit","Mechanic`s Toolbox","Commodious Toolbox"]'
+	List Import VRare '["Utility Flashlight","Dull Key","Ranger Med-Kit","Engineer`s Toolbox","Alex`s Toolbox"]'
+	List Import URare '["Skeleton Key", "Rainbow Map"]'
+	List Count Rarity
+	Param Add count -1
+	Random Number 0 {count}
+	List Get Rarity {number}
+	If 35 {afterlc} = "item"
+		If 6 {value} = "Common"
+				List Count Common
+				Param Add count -1
+				Random Number 0 {count}
+				List Get Common {number}
+				Chat Send {value}
+				exit
+		If 6 {value} = "Uncommon"
+				List Count Uncommon
+				Param Add count -1
+				Random Number 0 {count}
+				List Get Uncommon {number}
+				Chat Send {value}
+				exit
+		If 6 {value} = "Rare"
+				List Count Rare
+				Param Add count -1
+				Random Number 0 {count}
+				List Get Rare {number}
+				Chat Send {value}
+				exit
+		If 6 {value} = "Very Rare"
+				List Count VRare
+				Param Add count -1
+				Random Number 0 {count}
+				List Get VRare {number}
+				Chat Send {value}
+				exit
+		If 6 {value} = "Ultra Rare"
+				List Count URare
+				Param Add count -1
+				Random Number 0 {count}
+				List Get URare {number}
+				Chat Send {value}
+				exit
+	Chat Send {value}
+	
+	
